@@ -2767,8 +2767,8 @@ textarea.form-control-lg {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  -webkit-print-color-adjust: exact;
-          color-adjust: exact;
+  -webkit-print-print-color-adjust: exact;
+          print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -16577,7 +16577,7 @@ html[data-theme=dark] .light-mode-item {
 
 .iphone-x.iphone-x-half {
   height: 300px;
-  background-image: url(../images/mockup/app-placeholder3.jpg);
+  background-image: url(../public/assets/images/mockup/app-placeholder3.jpg);
 }
 
 @media (max-width: 575.98px) {
@@ -16851,5 +16851,4 @@ html[data-theme=dark] .light-mode-item {
     max-width: 100%;
   }
 }
-/*User CSS*/
-/*# sourceMappingURL=style.css.map */
+
