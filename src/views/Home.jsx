@@ -7,7 +7,7 @@ import RightSidebar from "./components/RightSidebar";
 export default function Dashboard() {
   return (
     <>
-      <Header/>
+      <Header />
       <main>
         {/* <!--  Container START --> */}
         <div className="container">

@@ -229,7 +229,7 @@ export default function Navright() {
               </a>
             </li>
             <li>
-              
+
               <hr className="dropdown-divider" />
             </li>
             {/* <!--  Dark mode switch START --> */}
