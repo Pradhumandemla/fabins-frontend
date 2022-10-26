@@ -137,7 +137,7 @@ export default function Main() {
                         className="tns-item"
                         id="tns1-item4"
                         aria-hidden="true"
-                        tabindex="-1"
+                        tabIndex="-1"
                       >
                         {/* <!--  Card START --> */}
                         <div
@@ -169,7 +169,7 @@ export default function Main() {
                         className="tns-item"
                         id="tns1-item5"
                         aria-hidden="true"
-                        tabindex="-1"
+                        tabIndex="-1"
                       >
                         {/* <!--  Card START --> */}
                         <div
@@ -209,14 +209,14 @@ export default function Main() {
                   <button
                     type="button"
                     data-nav="1"
-                    tabindex="-1"
+                    tabIndex="-1"
                     aria-controls="tns1"
                     aria-label="Carousel Page 2"
                   ></button>
                   <button
                     type="button"
                     data-nav="2"
-                    tabindex="-1"
+                    tabIndex="-1"
                     aria-controls="tns1"
                     style={{ display: "none" }}
                     aria-label="Carousel Page 3"
@@ -224,7 +224,7 @@ export default function Main() {
                   <button
                     type="button"
                     data-nav="3"
-                    tabindex="-1"
+                    tabIndex="-1"
                     aria-controls="tns1"
                     style={{ display: "none" }}
                     aria-label="Carousel Page 4"
@@ -232,7 +232,7 @@ export default function Main() {
                   <button
                     type="button"
                     data-nav="4"
-                    tabindex="-1"
+                    tabIndex="-1"
                     aria-controls="tns1"
                     style={{ display: "none" }}
                     aria-label="Carousel Page 5"
@@ -240,7 +240,7 @@ export default function Main() {
                   <button
                     type="button"
                     data-nav="5"
-                    tabindex="-1"
+                    tabIndex="-1"
                     aria-controls="tns1"
                     style={{ display: "none" }}
                     aria-label="Carousel Page 6"
@@ -249,12 +249,12 @@ export default function Main() {
                 <div
                   className="tns-controls"
                   aria-label="Carousel Navigation"
-                  tabindex="0"
+                  tabIndex="0"
                 >
                   <button
                     type="button"
                     data-controls="prev"
-                    tabindex="-1"
+                    tabIndex="-1"
                     aria-controls="tns1"
                     disabled=""
                   >
@@ -263,7 +263,7 @@ export default function Main() {
                   <button
                     type="button"
                     data-controls="next"
-                    tabindex="-1"
+                    tabIndex="-1"
                     aria-controls="tns1"
                   >
                     <i className="fa-solid fa-chevron-right"></i>
@@ -1670,7 +1670,7 @@ export default function Main() {
                           <div
                             className="tns-item tns-slide-cloned"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -1706,7 +1706,7 @@ export default function Main() {
                           <div
                             className="tns-item tns-slide-cloned"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -1742,7 +1742,7 @@ export default function Main() {
                           <div
                             className="tns-item tns-slide-cloned"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -1778,7 +1778,7 @@ export default function Main() {
                           <div
                             className="tns-item tns-slide-cloned"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -1814,7 +1814,7 @@ export default function Main() {
                           <div
                             className="tns-item tns-slide-cloned"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -1850,7 +1850,7 @@ export default function Main() {
                           <div
                             className="tns-item tns-slide-cloned"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -1886,7 +1886,7 @@ export default function Main() {
                           <div
                             className="tns-item tns-slide-cloned"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -1924,7 +1924,7 @@ export default function Main() {
                             className="tns-item"
                             id="tns2-item0"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -1961,7 +1961,7 @@ export default function Main() {
                             className="tns-item"
                             id="tns2-item1"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -1998,7 +1998,7 @@ export default function Main() {
                             className="tns-item"
                             id="tns2-item2"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -2035,7 +2035,7 @@ export default function Main() {
                             className="tns-item"
                             id="tns2-item3"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -2199,7 +2199,7 @@ export default function Main() {
                           <div
                             className="tns-item tns-slide-cloned"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -2235,7 +2235,7 @@ export default function Main() {
                           <div
                             className="tns-item tns-slide-cloned"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -2271,7 +2271,7 @@ export default function Main() {
                           <div
                             className="tns-item tns-slide-cloned"
                             aria-hidden="true"
-                            tabindex="-1"
+                            tabIndex="-1"
                           >
                             {/* <!--  Card add friend item START --> */}
                             <div className="card shadow-none text-center">
@@ -2310,12 +2310,12 @@ export default function Main() {
                     <div
                       className="tns-controls"
                       aria-label="Carousel Navigation"
-                      tabindex="0"
+                      tabIndex="0"
                     >
                       <button
                         type="button"
                         data-controls="prev"
-                        tabindex="-1"
+                        tabIndex="-1"
                         aria-controls="tns2"
                       >
                         <i className="fa-solid fa-chevron-left"></i>
@@ -2323,7 +2323,7 @@ export default function Main() {
                       <button
                         type="button"
                         data-controls="next"
-                        tabindex="-1"
+                        tabIndex="-1"
                         aria-controls="tns2"
                       >
                         <i className="fa-solid fa-chevron-right"></i>
@@ -2429,7 +2429,7 @@ export default function Main() {
                       name="poll"
                       id="option"
                     />
-                    <label className="btn btn-outline-primary w-100" for="option">
+                    <label className="btn btn-outline-primary w-100" htmlFor="option">
                       We have cybersecurity insurance coverage
                     </label>
                   </div>
@@ -2441,7 +2441,7 @@ export default function Main() {
                       name="poll"
                       id="option2"
                     />
-                    <label className="btn btn-outline-primary w-100" for="option2">
+                    <label className="btn btn-outline-primary w-100" htmlFor="option2">
                       Our dedicated staff will protect us
                     </label>
                   </div>
@@ -2453,7 +2453,7 @@ export default function Main() {
                       name="poll"
                       id="option3"
                     />
-                    <label className="btn btn-outline-primary w-100" for="option3">
+                    <label className="btn btn-outline-primary w-100" htmlFor="option3">
                       We give regular training for best practices
                     </label>
                   </div>
@@ -2465,7 +2465,7 @@ export default function Main() {
                       name="poll"
                       id="option4"
                     />
-                    <label className="btn btn-outline-primary w-100" for="option4">
+                    <label className="btn btn-outline-primary w-100" htmlFor="option4">
                       Third-party vendor protection
                     </label>
                   </div>
@@ -3189,7 +3189,7 @@ export default function Main() {
               <div className="overflow-hidden fullscreen-video w-100">
                 {/* <!--  HTML video START --> */}
                 {/* <div className="player-wrapper overflow-hidden">
-                <div tabindex="0" className="plyr plyr--full-ui plyr--video plyr--html5 plyr--fullscreen-enabled plyr--paused plyr--stopped plyr--pip-supported plyr__poster-enabled plyr--is-touch"><div className="plyr__controls"><button className="plyr__controls__item plyr__control" type="button" data-plyr="play" aria-label="Play"><svg className="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-pause"></use></svg><svg className="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-play"></use></svg><span className="label--pressed plyr__sr-only">Pause</span><span className="label--not-pressed plyr__sr-only">Play</span></button><div className="plyr__controls__item plyr__progress__container"><div className="plyr__progress"><input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" autocomplete="off" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="10.048" aria-valuenow="0" id="plyr-seek-5164" aria-valuetext="00:00 of 00:00" style="--value:0%;"><progress className="plyr__progress__buffer" min="0" max="100" value="0" role="progressbar" aria-hidden="true">% buffered</progress><span className="plyr__tooltip">00:00</span></div></div><div className="plyr__controls__item plyr__time--current plyr__time" aria-label="Current time">00:10</div><div className="plyr__controls__item plyr__volume"><button type="button" className="plyr__control" data-plyr="mute"><svg className="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-muted"></use></svg><svg className="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-volume"></use></svg><span className="label--pressed plyr__sr-only">Unmute</span><span className="label--not-pressed plyr__sr-only">Mute</span></button><input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="plyr-volume-5164" aria-valuetext="100.0%" style="--value:100%;"></div><button className="plyr__controls__item plyr__control" type="button" data-plyr="captions"><svg className="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-captions-on"></use></svg><svg className="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-captions-off"></use></svg><span className="label--pressed plyr__sr-only">Disable captions</span><span className="label--not-pressed plyr__sr-only">Enable captions</span></button><div className="plyr__controls__item plyr__menu"><button aria-haspopup="true" aria-controls="plyr-settings-5164" aria-expanded="false" type="button" className="plyr__control" data-plyr="settings"><svg aria-hidden="true" focusable="false"><use xlink:href="#plyr-settings"></use></svg><span className="plyr__sr-only">Settings</span></button><div className="plyr__menu__container" id="plyr-settings-5164" hidden=""><div><div id="plyr-settings-5164-home"><div role="menu"><button data-plyr="settings" type="button" className="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Captions<span className="plyr__menu__value">Disabled</span></span></button><button data-plyr="settings" type="button" className="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Quality<span className="plyr__menu__value">undefined</span></span></button><button data-plyr="settings" type="button" className="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true"><span>Speed<span className="plyr__menu__value">Normal</span></span></button></div></div><div id="plyr-settings-5164-captions" hidden=""><button type="button" className="plyr__control plyr__control--back"><span aria-hidden="true">Captions</span><span className="plyr__sr-only">Go back to previous menu</span></button><div role="menu"></div></div><div id="plyr-settings-5164-quality" hidden=""><button type="button" className="plyr__control plyr__control--back"><span aria-hidden="true">Quality</span><span className="plyr__sr-only">Go back to previous menu</span></button><div role="menu"></div></div><div id="plyr-settings-5164-speed" hidden=""><button type="button" className="plyr__control plyr__control--back"><span aria-hidden="true">Speed</span><span className="plyr__sr-only">Go back to previous menu</span></button><div role="menu"><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="0.5"><span>0.5×</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="0.75"><span>0.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="true" value="1"><span>Normal</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="1.25"><span>1.25×</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="1.5"><span>1.5×</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="1.75"><span>1.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="2"><span>2×</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="4"><span>4×</span></button></div></div></div></div></div><button className="plyr__controls__item plyr__control" type="button" data-plyr="pip"><svg aria-hidden="true" focusable="false"><use xlink:href="#plyr-pip"></use></svg><span className="plyr__sr-only">PIP</span></button><button className="plyr__controls__item plyr__control" type="button" data-plyr="fullscreen"><svg className="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-exit-fullscreen"></use></svg><svg className="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-enter-fullscreen"></use></svg><span className="label--pressed plyr__sr-only">Exit fullscreen</span><span className="label--not-pressed plyr__sr-only">Enter fullscreen</span></button></div><div className="plyr__video-wrapper"><video className="player-html" crossorigin="anonymous" poster="assets/images/videos/poster.jpg" data-poster="assets/images/videos/poster.jpg">
+                <div tabIndex="0" className="plyr plyr--full-ui plyr--video plyr--html5 plyr--fullscreen-enabled plyr--paused plyr--stopped plyr--pip-supported plyr__poster-enabled plyr--is-touch"><div className="plyr__controls"><button className="plyr__controls__item plyr__control" type="button" data-plyr="play" aria-label="Play"><svg className="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-pause"></use></svg><svg className="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-play"></use></svg><span className="label--pressed plyr__sr-only">Pause</span><span className="label--not-pressed plyr__sr-only">Play</span></button><div className="plyr__controls__item plyr__progress__container"><div className="plyr__progress"><input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" autocomplete="off" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="10.048" aria-valuenow="0" id="plyr-seek-5164" aria-valuetext="00:00 of 00:00" style="--value:0%;"><progress className="plyr__progress__buffer" min="0" max="100" value="0" role="progressbar" aria-hidden="true">% buffered</progress><span className="plyr__tooltip">00:00</span></div></div><div className="plyr__controls__item plyr__time--current plyr__time" aria-label="Current time">00:10</div><div className="plyr__controls__item plyr__volume"><button type="button" className="plyr__control" data-plyr="mute"><svg className="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-muted"></use></svg><svg className="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-volume"></use></svg><span className="label--pressed plyr__sr-only">Unmute</span><span className="label--not-pressed plyr__sr-only">Mute</span></button><input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="plyr-volume-5164" aria-valuetext="100.0%" style="--value:100%;"></div><button className="plyr__controls__item plyr__control" type="button" data-plyr="captions"><svg className="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-captions-on"></use></svg><svg className="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-captions-off"></use></svg><span className="label--pressed plyr__sr-only">Disable captions</span><span className="label--not-pressed plyr__sr-only">Enable captions</span></button><div className="plyr__controls__item plyr__menu"><button aria-haspopup="true" aria-controls="plyr-settings-5164" aria-expanded="false" type="button" className="plyr__control" data-plyr="settings"><svg aria-hidden="true" focusable="false"><use xlink:href="#plyr-settings"></use></svg><span className="plyr__sr-only">Settings</span></button><div className="plyr__menu__container" id="plyr-settings-5164" hidden=""><div><div id="plyr-settings-5164-home"><div role="menu"><button data-plyr="settings" type="button" className="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Captions<span className="plyr__menu__value">Disabled</span></span></button><button data-plyr="settings" type="button" className="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Quality<span className="plyr__menu__value">undefined</span></span></button><button data-plyr="settings" type="button" className="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true"><span>Speed<span className="plyr__menu__value">Normal</span></span></button></div></div><div id="plyr-settings-5164-captions" hidden=""><button type="button" className="plyr__control plyr__control--back"><span aria-hidden="true">Captions</span><span className="plyr__sr-only">Go back to previous menu</span></button><div role="menu"></div></div><div id="plyr-settings-5164-quality" hidden=""><button type="button" className="plyr__control plyr__control--back"><span aria-hidden="true">Quality</span><span className="plyr__sr-only">Go back to previous menu</span></button><div role="menu"></div></div><div id="plyr-settings-5164-speed" hidden=""><button type="button" className="plyr__control plyr__control--back"><span aria-hidden="true">Speed</span><span className="plyr__sr-only">Go back to previous menu</span></button><div role="menu"><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="0.5"><span>0.5×</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="0.75"><span>0.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="true" value="1"><span>Normal</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="1.25"><span>1.25×</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="1.5"><span>1.5×</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="1.75"><span>1.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="2"><span>2×</span></button><button data-plyr="speed" type="button" role="menuitemradio" className="plyr__control" aria-checked="false" value="4"><span>4×</span></button></div></div></div></div></div><button className="plyr__controls__item plyr__control" type="button" data-plyr="pip"><svg aria-hidden="true" focusable="false"><use xlink:href="#plyr-pip"></use></svg><span className="plyr__sr-only">PIP</span></button><button className="plyr__controls__item plyr__control" type="button" data-plyr="fullscreen"><svg className="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-exit-fullscreen"></use></svg><svg className="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-enter-fullscreen"></use></svg><span className="label--pressed plyr__sr-only">Exit fullscreen</span><span className="label--not-pressed plyr__sr-only">Enter fullscreen</span></button></div><div className="plyr__video-wrapper"><video className="player-html" crossorigin="anonymous" poster="assets/images/videos/poster.jpg" data-poster="assets/images/videos/poster.jpg">
                   <source src="assets/images/videos/video-feed.mp4" type="video/mp4"/>
                 </video><div className="plyr__poster" style={{backgroundImage: url(&quot;assets/images/videos/poster.jpg&quot;);"></div></div><div className="plyr__captions"></div><button type="button" className="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><svg aria-hidden="true" focusable="false"><use xlink:href="#plyr-play"></use></svg><span className="plyr__sr-only">Play</span></button></div>
               </div> */}
