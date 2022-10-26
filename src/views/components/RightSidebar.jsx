@@ -29,7 +29,7 @@ export default function RightSidebar() {
                       {/* <!--  Title --> */}
                       <div className="overflow-hidden">
                         <a className="h6 mb-0" href="/">
-                          Judy Nguyen{" "}
+                          Judy Nguyen
                         </a>
                         <p className="mb-0 small text-truncate">News anchor</p>
                       </div>
@@ -47,18 +47,18 @@ export default function RightSidebar() {
                       {/* <!--  Avatar --> */}
                       <div className="avatar avatar-story">
                         <a href="/">
-                          {" "}
+                          
                           <img
                             className="avatar-img rounded-circle"
                             src="assets/images/avatar/05.jpg"
                             alt=""
-                          />{" "}
+                          />
                         </a>
                       </div>
                       {/* <!--  Title --> */}
                       <div className="overflow-hidden">
                         <a className="h6 mb-0" href="/">
-                          Amanda Reed{" "}
+                          Amanda Reed
                         </a>
                         <p className="mb-0 small text-truncate">Web Developer</p>
                       </div>
@@ -77,18 +77,18 @@ export default function RightSidebar() {
                       {/* <!--  Avatar --> */}
                       <div className="avatar">
                         <a href="/">
-                          {" "}
+                          
                           <img
                             className="avatar-img rounded-circle"
                             src="assets/images/avatar/11.jpg"
                             alt=""
-                          />{" "}
+                          />
                         </a>
                       </div>
                       {/* <!--  Title --> */}
                       <div className="overflow-hidden">
                         <a className="h6 mb-0" href="/">
-                          Billy Vasquez{" "}
+                          Billy Vasquez
                         </a>
                         <p className="mb-0 small text-truncate">News anchor</p>
                       </div>
@@ -107,18 +107,18 @@ export default function RightSidebar() {
                       {/* <!--  Avatar --> */}
                       <div className="avatar">
                         <a href="/">
-                          {" "}
+                          
                           <img
                             className="avatar-img rounded-circle"
                             src="assets/images/avatar/01.jpg"
                             alt=""
-                          />{" "}
+                          />
                         </a>
                       </div>
                       {/* <!--  Title --> */}
                       <div className="overflow-hidden">
                         <a className="h6 mb-0" href="/">
-                          Lori Ferguson{" "}
+                          Lori Ferguson
                         </a>
                         <p className="mb-0 small text-truncate">
                           Web Developer at Webestica
@@ -139,18 +139,18 @@ export default function RightSidebar() {
                       {/* <!--  Avatar --> */}
                       <div className="avatar">
                         <a href="/">
-                          {" "}
+                          
                           <img
                             className="avatar-img rounded-circle"
                             src="assets/images/avatar/placeholder.jpg"
                             alt=""
-                          />{" "}
+                          />
                         </a>
                       </div>
                       {/* <!--  Title --> */}
                       <div className="overflow-hidden">
                         <a className="h6 mb-0" href="/">
-                          Carolyn Ortiz{" "}
+                          Carolyn Ortiz
                         </a>
                         <p className="mb-0 small text-truncate">News anchor</p>
                       </div>

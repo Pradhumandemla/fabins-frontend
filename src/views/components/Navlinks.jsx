@@ -17,43 +17,43 @@ export default function Navlinks() {
           </a>
           <ul className="dropdown-menu" aria-labelledby="homeMenu">
             <li>
-              {" "}
+              
               <a className="dropdown-item active" href="index.html">
                 Home default
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="index-classic.html">
                 Home classic
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="index-post.html">
                 Home post
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="index-video.html">
                 Home video
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="index-event.html">
                 Home event
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="landing.html">
                 Landing page
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="app-download.html">
                 App download
               </a>
@@ -85,19 +85,19 @@ export default function Navlinks() {
           </a>
           <ul className="dropdown-menu" aria-labelledby="pagesMenu">
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="albums.html">
                 Albums
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="celebration.html">
                 Celebration
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="messaging.html">
                 Messaging
               </a>
@@ -109,117 +109,117 @@ export default function Navlinks() {
               </a>
               <ul className="dropdown-menu" data-bs-popper="none">
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="my-profile.html">
                     Feed
-                  </a>{" "}
+                  </a>
                 </li>
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="my-profile-about.html">
                     About
-                  </a>{" "}
+                  </a>
                 </li>
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="my-profile-connections.html">
                     Connections
-                  </a>{" "}
+                  </a>
                 </li>
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="my-profile-media.html">
                     Media
-                  </a>{" "}
+                  </a>
                 </li>
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="my-profile-videos.html">
                     Videos
-                  </a>{" "}
+                  </a>
                 </li>
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="my-profile-events.html">
                     Events
-                  </a>{" "}
+                  </a>
                 </li>
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="my-profile-activity.html">
                     Activity
-                  </a>{" "}
+                  </a>
                 </li>
               </ul>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="events.html">
                 Events
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="events-2.html">
                 Events 2
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="event-details.html">
                 Event details
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="event-details-2.html">
                 Event details 2
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="groups.html">
                 Groups
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="group-details.html">
                 Group details
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="post-videos.html">
                 Post videos
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="post-video-details.html">
                 Post video details
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="post-details.html">
                 Post details
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="video-details.html">
                 Video details
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="blog.html">
                 Blog
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="blog-details.html">
                 Blog details
               </a>
@@ -233,16 +233,16 @@ export default function Navlinks() {
               </a>
               <ul className="dropdown-menu dropdown-menu-end" data-bs-popper="none">
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="/">
                     Dropdown item
-                  </a>{" "}
+                  </a>
                 </li>
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="/">
                     Dropdown item
-                  </a>{" "}
+                  </a>
                 </li>
                 {/* <!--  dropdown submenu open left --> */}
                 <li className="dropdown-submenu dropstart">
@@ -254,24 +254,24 @@ export default function Navlinks() {
                     data-bs-popper="none"
                   >
                     <li>
-                      {" "}
+                      
                       <a className="dropdown-item" href="/">
                         Dropdown item
-                      </a>{" "}
+                      </a>
                     </li>
                     <li>
-                      {" "}
+                      
                       <a className="dropdown-item" href="/">
                         Dropdown item
-                      </a>{" "}
+                      </a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="/">
                     Dropdown item
-                  </a>{" "}
+                  </a>
                 </li>
               </ul>
             </li>
@@ -288,38 +288,38 @@ export default function Navlinks() {
             aria-haspopup="true"
             aria-expanded="false"
           >
-            Account{" "}
+            Account
           </a>
           <ul className="dropdown-menu" aria-labelledby="postMenu">
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="create-page.html">
                 Create a page
               </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="settings.html">
                 Settings
-              </a>{" "}
+              </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="notifications.html">
                 Notifications
-              </a>{" "}
+              </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="help.html">
                 Help center
-              </a>{" "}
+              </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="help-details.html">
                 Help details
-              </a>{" "}
+              </a>
             </li>
             {/* <!--  dropdown submenu open left --> */}
             <li className="dropdown-submenu dropstart">
@@ -328,61 +328,61 @@ export default function Navlinks() {
               </a>
               <ul className="dropdown-menu dropdown-menu-end" data-bs-popper="none">
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="sign-in.html">
                     Sign in
-                  </a>{" "}
+                  </a>
                 </li>
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="sign-up.html">
                     Sing up
-                  </a>{" "}
+                  </a>
                 </li>
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="forgot-password.html">
                     Forgot password
-                  </a>{" "}
+                  </a>
                 </li>
                 <li className="dropdown-divider"></li>
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="sign-in-advance.html">
                     Sign in advance
-                  </a>{" "}
+                  </a>
                 </li>
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="sign-up-advance.html">
                     Sing up advance
-                  </a>{" "}
+                  </a>
                 </li>
                 <li>
-                  {" "}
+                  
                   <a className="dropdown-item" href="forgot-password-advance.html">
                     Forgot password advance
-                  </a>{" "}
+                  </a>
                 </li>
               </ul>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="error-404.html">
                 Error 404
-              </a>{" "}
+              </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="offline.html">
                 Offline
-              </a>{" "}
+              </a>
             </li>
             <li>
-              {" "}
+              
               <a className="dropdown-item" href="privacy-and-terms.html">
                 Privacy &amp; terms
-              </a>{" "}
+              </a>
             </li>
           </ul>
         </li>

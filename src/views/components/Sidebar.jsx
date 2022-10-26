@@ -64,8 +64,8 @@ export default function Sidebar() {
                       </div>
                       {/* <!--  Info --> */}
                       <h5 className="mb-0">
-                        {" "}
-                        <a href="/">Sam Lanson </a>{" "}
+                        
+                        <a href="/">Sam Lanson </a>
                       </h5>
                       <small>Web Developer at Webestica</small>
                       <p className="mt-3">
@@ -105,7 +105,7 @@ export default function Sidebar() {
                     <ul className="nav nav-link-secondary flex-column fw-bold gap-2">
                       <li className="nav-item">
                         <a className="nav-link" href="my-profile.html">
-                          {" "}
+                          
                           <img
                             className="me-2 h-20px fa-fw"
                             src="assets/images/icon/home-outline-filled.svg"
@@ -119,7 +119,7 @@ export default function Sidebar() {
                           className="nav-link"
                           href="my-profile-connections.html"
                         >
-                          {" "}
+                          
                           <img
                             className="me-2 h-20px fa-fw"
                             src="assets/images/icon/person-outline-filled.svg"
@@ -130,7 +130,7 @@ export default function Sidebar() {
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="blog.html">
-                          {" "}
+                          
                           <img
                             className="me-2 h-20px fa-fw"
                             src="assets/images/icon/earth-outline-filled.svg"
@@ -141,7 +141,7 @@ export default function Sidebar() {
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="events.html">
-                          {" "}
+                          
                           <img
                             className="me-2 h-20px fa-fw"
                             src="assets/images/icon/calendar-outline-filled.svg"
@@ -152,7 +152,7 @@ export default function Sidebar() {
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="groups.html">
-                          {" "}
+                          
                           <img
                             className="me-2 h-20px fa-fw"
                             src="assets/images/icon/chat-outline-filled.svg"
@@ -163,7 +163,7 @@ export default function Sidebar() {
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="notifications.html">
-                          {" "}
+                          
                           <img
                             className="me-2 h-20px fa-fw"
                             src="assets/images/icon/notification-outlined-filled.svg"
@@ -174,7 +174,7 @@ export default function Sidebar() {
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="settings.html">
-                          {" "}
+                          
                           <img
                             className="me-2 h-20px fa-fw"
                             src="assets/images/icon/cog-outline-filled.svg"
@@ -190,7 +190,7 @@ export default function Sidebar() {
                   {/* <!--  Card footer --> */}
                   <div className="card-footer text-center py-2">
                     <a className="btn btn-link btn-sm" href="my-profile.html">
-                      View Profile{" "}
+                      View Profile
                     </a>
                   </div>
                 </div>
@@ -214,7 +214,7 @@ export default function Sidebar() {
                       target="_blank"
                       href="https://support.webestica.com/login"
                     >
-                      Support{" "}
+                      Support
                     </a>
                   </li>
                   <li className="nav-item">
@@ -223,7 +223,7 @@ export default function Sidebar() {
                       target="_blank"
                       href="docs/index.html"
                     >
-                      Docs{" "}
+                      Docs
                     </a>
                   </li>
                   <li className="nav-item">
@@ -240,14 +240,14 @@ export default function Sidebar() {
                 {/* <!--  Helper link END --> */}
                 {/* <!--  Copyright --> */}
                 <p className="small text-center mt-1">
-                  ©2022{" "}
+                  ©2022
                   <a
                     className="text-body"
                     target="_blank"
                     href="https://www.webestica.com/"
                   >
-                    {" "}
-                    Webestica{" "}
+                    
+                    Webestica
                   </a>
                 </p>
               </div>

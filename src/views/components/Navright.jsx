@@ -33,7 +33,7 @@ export default function Navright() {
             <div className="card">
               <div className="card-header d-flex justify-content-between align-items-center">
                 <h6 className="m-0">
-                  Notifications{" "}
+                  Notifications
                   <span className="badge bg-danger bg-opacity-10 text-danger ms-2">
                     4 new
                   </span>
@@ -63,10 +63,10 @@ export default function Navright() {
                         </div>
                         <div className="d-flex">
                           <button className="btn btn-sm py-1 btn-primary me-2">
-                            Accept{" "}
+                            Accept
                           </button>
                           <button className="btn btn-sm py-1 btn-danger-soft">
-                            Delete{" "}
+                            Delete
                           </button>
                         </div>
                       </div>
@@ -229,7 +229,7 @@ export default function Navright() {
               </a>
             </li>
             <li>
-              {" "}
+              
               <hr className="dropdown-divider" />
             </li>
             {/* <!--  Dark mode switch START --> */}

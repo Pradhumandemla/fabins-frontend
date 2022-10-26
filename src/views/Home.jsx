@@ -15,7 +15,7 @@ export default function Dashboard() {
             <Sidebar />
             <MainContent />
             <RightSidebar />
-          </div>{" "}
+          </div>
           {/* <!--  Row END --> */}
         </div>
         {/* <!--  Container END --> */}
