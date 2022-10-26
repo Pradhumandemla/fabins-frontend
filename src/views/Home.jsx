@@ -1,6 +1,6 @@
-import Header from "./partials/Header";
+import Header from "./components/Header";
 // import Footer from "./partials/Footer";
-// import MainContent from "./partials/MainContent";
+import MainContent from "./components/MainContent";
 // import ProfileDropdown from "./partials/ProfileDropdown";
 
 export default function Dashboard() {
@@ -8,12 +8,7 @@ export default function Dashboard() {
     <>
       <Header />
       {/* <br /> */}
-      {/* <div className="w-100"></div>
-      <div className="d-flex">
-        <div className="col-4"></div>
-        <div className="col-4">hello</div>
-      </div> */}
-      {/* <MainContent /> */}
+      <MainContent />
       {/* <Footer /> */}
       {/* <div>main content</div> */}
     </>
