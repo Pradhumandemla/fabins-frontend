@@ -62,7 +62,7 @@ export default function Navlinks() {
             <li>
               <a
                 className="dropdown-item"
-                href="https://themes.getbootstrap.com/store/webestica/"
+                href="/"
                 target="_blank"
               >
                 <i className="text-success fa-fw bi bi-cloud-download-fill me-2"></i>

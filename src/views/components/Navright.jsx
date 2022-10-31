@@ -111,7 +111,7 @@ export default function Navright() {
                       <div className="ms-sm-3">
                         <div className="d-flex">
                           <p className="small mb-2">
-                            Webestica has 15 like and 1 new activity
+                            Fabins has 15 like and 1 new activity
                           </p>
                           <p className="small ms-3">1hr</p>
                         </div>
@@ -208,7 +208,7 @@ export default function Navright() {
             <li>
               <a
                 className="dropdown-item"
-                href="https://support.webestica.com/"
+                href="https://support.Fabins.com/"
                 target="_blank"
               >
                 <i className="fa-fw bi bi-life-preserver me-2"></i>Support

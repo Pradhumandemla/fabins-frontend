@@ -67,7 +67,7 @@ export default function Sidebar() {
 
                       <a href="/">Sam Lanson </a>
                     </h5>
-                    <small>Web Developer at Webestica</small>
+                    <small>Web Developer at Fabins</small>
                     <p className="mt-3">
                       I'd love to change the world, but they won’t give me
                       the source code.
@@ -212,7 +212,7 @@ export default function Sidebar() {
                   <a
                     className="nav-link"
                     target="_blank"
-                    href="https://support.webestica.com/login"
+                    href="https://support.Fabins.com/login"
                   >
                     Support
                   </a>
@@ -244,10 +244,10 @@ export default function Sidebar() {
                 <a
                   className="text-body"
                   target="_blank"
-                  href="https://www.webestica.com/"
+                  href="https://www.Fabins.com/"
                 >
 
-                  Webestica
+                  Fabins
                 </a>
               </p>
             </div>

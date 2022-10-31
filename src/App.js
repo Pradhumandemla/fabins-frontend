@@ -1,7 +1,7 @@
 import "./styles2.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./views/Home";
-import Login from "./views/Login";
+import Signin from "./views/Signin";
 import Signup from "./views/Signup";
 
 export default function App() {
@@ -9,8 +9,8 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<Signup />} />
+        <Route path="sign-in" element={<Signin />} />
+        <Route path="sign-up" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );

@@ -121,7 +121,7 @@ export default function RightSidebar() {
                       Lori Ferguson
                     </a>
                     <p className="mb-0 small text-truncate">
-                      Web Developer at Webestica
+                      Web Developer at Fabins
                     </p>
                   </div>
                   {/* <!--  Button --> */}
