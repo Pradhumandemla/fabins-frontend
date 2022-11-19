@@ -24,8 +24,8 @@ export default function Header() {
           <button
             className="navbar-toggler ms-auto icon-md btn btn-light p-0 collapsed"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse"
             aria-expanded="false"
             aria-label="Toggle navigation"

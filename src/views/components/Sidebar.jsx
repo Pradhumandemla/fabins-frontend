@@ -211,8 +211,7 @@ export default function Sidebar() {
                 <li className="nav-item">
                   <a
                     className="nav-link"
-                    target="_blank"
-                    href="https://support.Fabins.com/login"
+                    href="/"
                   >
                     Support
                   </a>
@@ -220,8 +219,7 @@ export default function Sidebar() {
                 <li className="nav-item">
                   <a
                     className="nav-link"
-                    target="_blank"
-                    href="docs/index.html"
+                    href="/"
                   >
                     Docs
                   </a>
@@ -241,12 +239,7 @@ export default function Sidebar() {
               {/* <!--  Copyright --> */}
               <p className="small text-center mt-1">
                 ©2022
-                <a
-                  className="text-body"
-                  target="_blank"
-                  href="https://www.Fabins.com/"
-                >
-
+                <a className="text-body" href="/" >
                   Fabins
                 </a>
               </p>

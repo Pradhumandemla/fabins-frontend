@@ -35,7 +35,7 @@ export default function ShareFeed() {
                             data-bs-target="#feedActionPhoto"
                         >
 
-                            <i className="bi bi-image-fill text-success pe-2"></i>Photo
+                            <i className="fa-solid fa-image text-success pe-2"></i>Photo
                         </a>
                     </li>
                     <li className="nav-item">
@@ -46,7 +46,7 @@ export default function ShareFeed() {
                             data-bs-target="#feedActionVideo"
                         >
 
-                            <i className="bi bi-camera-reels-fill text-info pe-2"></i>Video
+                            <i className="fa-solid fa-video text-info pe-2"></i>Video
                         </a>
                     </li>
                     <li className="nav-item">
@@ -57,7 +57,7 @@ export default function ShareFeed() {
                             data-bs-target="#modalCreateEvents"
                         >
 
-                            <i className="bi bi-calendar2-event-fill text-danger pe-2"></i>
+                            <i className="fa-solid fa-calendar text-danger pe-2"></i>
                             Event
                         </a>
                     </li>
@@ -69,7 +69,7 @@ export default function ShareFeed() {
                             data-bs-target="#modalCreateFeed"
                         >
 
-                            <i className="bi bi-emoji-smile-fill text-warning pe-2"></i>
+                            <i className="fa-solid fa-face-smile text-warning pe-2"></i>
                             Feeling /Activity
                         </a>
                     </li>
@@ -81,7 +81,7 @@ export default function ShareFeed() {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                         >
-                            <i className="bi bi-three-dots"></i>
+                            <i className="fa-solid fa-ellipsis"></i>
                         </a>
                         {/* <!--  Dropdown menu --> */}
                         <ul

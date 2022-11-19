@@ -1,16 +1,29 @@
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { logout } from "../../redux/Auth/authSlice";
+
 export default function Navright() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const logoutHandler = ()=>{
+    
+    localStorage.removeItem("token");
+    dispatch(logout());
+    return navigate("/login");
+  }
   return (
     <>
       {/* <!--  Nav right START --> */}
       <ul className="nav flex-nowrap align-items-center ms-sm-3 list-unstyled">
         <li className="nav-item ms-2">
           <a className="nav-link icon-md btn btn-light p-0" href="messaging.html">
-            <i className="bi bi-chat-left-text-fill fs-6"> </i>
+            <i className="fa-solid fa-comments fs-6"> </i>
           </a>
         </li>
         <li className="nav-item ms-2">
           <a className="nav-link icon-md btn btn-light p-0" href="settings.html">
-            <i className="bi bi-gear-fill fs-6"> </i>
+            <i className="fa-solid fa-gear fs-6"> </i>
           </a>
         </li>
         <li className="nav-item dropdown ms-2">
@@ -19,12 +32,12 @@ export default function Navright() {
             href="/"
             id="notifDropdown"
             role="button"
-            data-bs-toggle="dropdown"
+            data-toggle="dropdown"
             aria-expanded="false"
-            data-bs-auto-close="outside"
+            data-auto-close="outside"
           >
             <span className="badge-notif animation-blink"></span>
-            <i className="bi bi-bell-fill fs-6"> </i>
+            <i className="fa-solid fa-bell fs-6"> </i>
           </a>
           <div
             className="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0"
@@ -208,8 +221,7 @@ export default function Navright() {
             <li>
               <a
                 className="dropdown-item"
-                href="https://support.Fabins.com/"
-                target="_blank"
+                href="/"
               >
                 <i className="fa-fw bi bi-life-preserver me-2"></i>Support
               </a>
@@ -221,12 +233,12 @@ export default function Navright() {
             </li>
             <li className="dropdown-divider"></li>
             <li>
-              <a
+              <button
                 className="dropdown-item bg-danger-soft-hover"
-                href="sign-in-advance.html"
+                onClick={logoutHandler} 
               >
-                <i className="bi bi-power fa-fw me-2"></i>Sign Out
-              </a>
+                <i className="bi bi-power fa-fw me-2"></i>LogOut
+              </button>
             </li>
             <li>
 

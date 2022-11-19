@@ -26,7 +26,7 @@ export default function AdsPost() {
                                 <a href="/" className="mb-0 text-body">
                                     Sponsored
                                     <i
-                                        className="bi bi-info-circle ps-1"
+                                        className="fa-solid fa-circle-info ps-1"
                                         data-bs-container="body"
                                         data-bs-toggle="popover"
                                         data-bs-placement="top"
@@ -46,7 +46,7 @@ export default function AdsPost() {
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
-                                <i className="bi bi-three-dots"></i>
+                                <i className="fa-solid fa-ellipsis"></i>
                             </a>
                             {/* <!--  Card share action dropdown menu --> */}
                             <ul

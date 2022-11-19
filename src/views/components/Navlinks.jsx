@@ -78,7 +78,7 @@ export default function Navlinks() {
             href="/"
             id="pagesMenu"
             data-bs-toggle="dropdown"
-            aria-haspopup="true"
+            // aria-haspopup="true"
             aria-expanded="false"
           >
             Pages
@@ -284,8 +284,8 @@ export default function Navlinks() {
             className="nav-link dropdown-toggle"
             href="/"
             id="postMenu"
-            data-bs-toggle="dropdown"
-            aria-haspopup="true"
+            data-toggle="dropdown"
+            // aria-haspopup="true"
             aria-expanded="false"
           >
             Account

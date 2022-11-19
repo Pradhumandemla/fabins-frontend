@@ -36,7 +36,7 @@ export default function PostMultiPic() {
                                         data-bs-original-title="Public"
                                     >
 
-                                        <i className="bi bi-globe"></i>
+                                        <i className="fa-solid fa-globe"></i>
                                     </span>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@ export default function PostMultiPic() {
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
-                                <i className="bi bi-three-dots"></i>
+                                <i className="fa-solid fa-ellipsis"></i>
                             </a>
                             {/* <!--  Card share action dropdown menu --> */}
                             <ul
@@ -121,7 +121,7 @@ export default function PostMultiPic() {
                                     <img
                                         className="rounded img-fluid"
                                         src="assets/images/post/1by1/03.jpg"
-                                        alt="Image"
+                                        alt=""
                                     />
                                 </a>
                             </div>
@@ -135,7 +135,7 @@ export default function PostMultiPic() {
                                     <img
                                         className="rounded img-fluid"
                                         src="assets/images/post/3by2/01.jpg"
-                                        alt="Image"
+                                        alt=""
                                     />
                                 </a>
                                 {/* <!--  Grid img --> */}

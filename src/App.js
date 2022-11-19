@@ -1,16 +1,17 @@
 import "./styles.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./views/Home";
-import Signin from "./views/Signin";
-import Signup from "./views/Signup";
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import Dashboard from "./views/Dashboard";
+import Login from "./views/Login";
+import Register from "./views/Register";
+
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="sign-in" element={<Signin />} />
-        <Route path="sign-up" element={<Signup />} />
+        <Route index path="/" element={<Dashboard />} />
+        <Route exact path="login" element={<Login />} />
+        <Route exact path="register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );

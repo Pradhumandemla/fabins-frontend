@@ -4,8 +4,21 @@ import RightSidebar from "./components/RightSidebar";
 import ShareFeed from "./components/ShareFeed";
 import Timeline from "./components/Timeline";
 import Stories from "./components/Stories";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { logout } from "../redux/Auth/authSlice";
+
 
 export default function Dashboard() {
+  const { token } = useSelector((state) => state.auth)
+
+  const navigate = useNavigate();
+  useEffect(()=>{
+    if (token === false ){
+      return navigate("/login");
+    }
+  })
   return (
     <>
       <Header />

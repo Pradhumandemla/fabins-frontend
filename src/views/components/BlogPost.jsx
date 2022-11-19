@@ -36,7 +36,7 @@ export default function BlogPost() {
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
-                                <i className="bi bi-three-dots"></i>
+                                <i className="fa-solid fa-ellipsis"></i>
                             </a>
                             {/* <!--  Card share action dropdown menu --> */}
                             <ul
