@@ -6,9 +6,13 @@ export default function Stories() {
 
     useEffect(() => {
         let scriptTag = document.createElement("script");
-        scriptTag.src = "./assets/dist/js/tinySlider.js";
+        scriptTag.src = "assets/dist/tiny-slider/js/tinySlider.js";
         document.body.appendChild(scriptTag);
-    }, []);
+
+        return () => {
+            document.body.removeChild(scriptTag);
+        }
+    });
 
     return (
         <>

@@ -40,7 +40,7 @@ export default function Header() {
           {/* <!--  Main navbar START --> */}
           <div className="navbar-collapse collapse" id="navbarCollapse">
             <Search />
-            <Navlinks />
+            {/* <Navlinks /> */}
           </div>
           {/* <!--  Main navbar END --> */}
 

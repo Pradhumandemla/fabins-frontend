@@ -15,7 +15,7 @@ export default function Search() {
               className="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y"
               type="submit"
             >
-              <i class="fa fa-search" aria-hidden="true"></i>
+              <i className="fa fa-search" aria-hidden="true"></i>
             </button>
           </form>
         </div>

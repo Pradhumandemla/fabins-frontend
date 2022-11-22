@@ -7,7 +7,6 @@ export default function Navright() {
   const navigate = useNavigate();
 
   const logoutHandler = ()=>{
-    
     localStorage.removeItem("token");
     dispatch(logout());
     return navigate("/login");
@@ -17,12 +16,12 @@ export default function Navright() {
       {/* <!--  Nav right START --> */}
       <ul className="nav flex-nowrap align-items-center ms-sm-3 list-unstyled">
         <li className="nav-item ms-2">
-          <a className="nav-link icon-md btn btn-light p-0" href="messaging.html">
+          <a className="nav-link icon-md btn btn-light p-0" href="/">
             <i className="fa-solid fa-comments fs-6"> </i>
           </a>
         </li>
         <li className="nav-item ms-2">
-          <a className="nav-link icon-md btn btn-light p-0" href="settings.html">
+          <a className="nav-link icon-md btn btn-light p-0" href="">
             <i className="fa-solid fa-gear fs-6"> </i>
           </a>
         </li>
@@ -32,7 +31,7 @@ export default function Navright() {
             href="/"
             id="notifDropdown"
             role="button"
-            data-toggle="dropdown"
+            data-bs-toggle="dropdown"
             aria-expanded="false"
             data-auto-close="outside"
           >

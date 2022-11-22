@@ -10,7 +10,7 @@ export default function Navlinks() {
             href="/"
             id="homeMenu"
             data-bs-toggle="dropdown"
-            aria-haspopup="true"
+            // aria-haspopup="true"
             aria-expanded="false"
           >
             Demo

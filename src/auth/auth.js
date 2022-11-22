@@ -21,7 +21,7 @@ export const login = async (dispatch, newUser) => {
 
 export const register = async (dispatch, newUser) => {
     try {
-        let res = await axios.post(process.env.REACT_APP_BACKEND + "/auth/register", { email: newUser.email, password: newUser.password })
+        let res = await axios.post(process.env.REACT_APP_BACKEND + "/auth/register", { ...newUser })
         if (res.status !== 200) {
             console.log("error " + res.status);
             localStorage.removeItem("token")
@@ -34,5 +34,12 @@ export const register = async (dispatch, newUser) => {
     } catch (error) {
         console.log(error);
         return
+    }
+}
+export const logout = () => {
+    try {
+        
+    } catch (error) {
+        
     }
 }

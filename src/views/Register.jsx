@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { register } from "../auth/auth";
 
 export default function Register() {
-  const [newUser, setNewUser] = useState({ email: "", password: "" });
+  const [newUser, setNewUser] = useState({ email: "", name:"", password: "" });
   const state = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -55,7 +55,12 @@ export default function Register() {
                   {/* <!-- Email --> */}
                   <div className="mb-3 input-group-lg">
                     <input type="email" className="form-control" placeholder="Enter email" name="email" value={newUser.email} onChange={(e) => handleChange(e)} />
-                    <small>We'll never share your email with anyone else.</small>
+                    {/* <small>We'll never share your email with anyone else.</small> */}
+                  </div>
+                  {/* <!-- Full name --> */}
+                  <div className="mb-3 input-group-lg">
+                    <input type="name" className="form-control" placeholder="Enter name" name="name" value={newUser.name} onChange={(e) => handleChange(e)} />
+                    {/* <small>We'll never share your name with anyone else.</small> */}
                   </div>
                   {/* <!-- New password --> */}
                   <div className="mb-3 position-relative">

@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar";
 import RightSidebar from "./components/RightSidebar";
 import ShareFeed from "./components/ShareFeed";
 import Timeline from "./components/Timeline";
-import Stories from "./components/Stories";
+// import Stories from "./components/Stories";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
@@ -29,12 +29,12 @@ export default function Dashboard() {
             <Sidebar />
             {/* <!--  Main content START --> */}
             <div className="col-md-8 col-lg-6 vstack gap-4">
-              <Stories />
+              {/* <Stories /> */}
               <ShareFeed />
               <Timeline />
             </div>
             {/* <!--  Main content END --> */}
-            <RightSidebar />
+            {/* <RightSidebar /> */}
           </div>
           {/* <!--  Row END --> */}
         </div>
