@@ -1,4 +1,5 @@
 // import axios from "axios";
+import * as redux from "../redux/Auth/authSlice";
 
 export const login = async (dispatch, newUser) => {
     try {
@@ -12,6 +13,7 @@ export const login = async (dispatch, newUser) => {
         // let { token } = res.data
         // localStorage.setItem("token", token)
         // dispatch(redux.login(token))
+        dispatch(redux.login("ashdajhs"))
     } catch (error) {
         console.log(error);
         return
@@ -37,8 +39,8 @@ export const register = async (dispatch, newUser) => {
 }
 export const logout = () => {
     try {
-        
+
     } catch (error) {
-        
+
     }
 }

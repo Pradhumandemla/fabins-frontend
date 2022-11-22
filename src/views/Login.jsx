@@ -2,9 +2,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import * as redux from "../redux/Auth/authSlice";                   
-// import { login } from "../auth/auth";
+import { useNavigate } from "react-router-dom";              
+import { login } from "../auth/auth";
 
 export default function Login() {
   const [newUser, setNewUser] = useState({ email: "", password: "" });
@@ -17,8 +16,7 @@ export default function Login() {
 
   const loginHandler = async (e) => {
     e.preventDefault();
-    dispatch(redux.login("ashdajhs"))
-    // login(dispatch, newUser)
+    login(dispatch, newUser)
   }
 
   useEffect(() => {
