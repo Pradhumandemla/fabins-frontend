@@ -1,17 +1,18 @@
 import { useEffect } from "react";
 import { useState } from "react";
-// import { useDispatch, useSelector } from "react-redux";
-// import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+// import { useDispatch} from "react-redux";
+import { useNavigate } from "react-router-dom";
 // import { register } from "../auth/auth";
 
 export default function Register() {
-  const [newUser, setNewUser] = useState({ email: "", name:"", password: "" });
-  // const state = useSelector((state) => state.auth);
+  const [newUser, setNewUser] = useState({ email: "", name: "", password: "" });
+  const state = useSelector((state) => state.auth);
   // const dispatch = useDispatch();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  const handleChange = e =>  setNewUser({ ...newUser, [e.target.name]: (e.target.value+"").trim() });
-  
+  const handleChange = e => setNewUser({ ...newUser, [e.target.name]: (e.target.value + "").trim() });
+
   const confirmPasswordHandler = e => {
     let abc = document.querySelector("#registerError").classList
     const registerButton = document.querySelector("#register").classList
@@ -30,10 +31,10 @@ export default function Register() {
     // register(dispatch, newUser);
   }
 
-  useEffect(()=>{
-    // if (state.token) {
-    //   navigate("/")
-    // }
+  useEffect(() => {
+    if (state.token) {
+      navigate("/")
+    }
   })
   return (
     <>

@@ -1,14 +1,15 @@
 import { useEffect } from "react";
 import { useState } from "react";
-// import { useDispatch, useSelector } from "react-redux";
-// import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 // import { login } from "../auth/auth";
 
 export default function Login() {
   const [newUser, setNewUser] = useState({ email: "", password: "" });
-  // const state = useSelector((state) => state.auth);
+  const state = useSelector((state) => state.auth);
   // const dispatch = useDispatch();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
 
   const handleChange = e => setNewUser({ ...newUser, [e.target.name]: (e.target.value + "").trim() });
@@ -18,10 +19,10 @@ export default function Login() {
     // login(dispatch, newUser)
   }
 
-  useEffect(()=>{
-    // if (state.token) {
-    //   navigate("/")
-    // }
+  useEffect(() => {
+    if (state.token) {
+      navigate("/")
+    }
   })
 
   return (
@@ -55,12 +56,12 @@ export default function Login() {
                   {/* <div id="pswmeter" className="mt-2 password-strength-meter"><div className="password-strength-meter-score"></div></div>
                   <div className="d-flex mt-1">
                     <div id="pswmeter-message" className="rounded">Write your password...</div> */}
-                    {/* <!-- Password message notification --> */}
-                    {/* <div className="ms-auto">
+                  {/* <!-- Password message notification --> */}
+                  {/* <div className="ms-auto">
                       <i className="fa-solid fa-circle-info ps-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Include at least one uppercase, one lowercase, one special character, one number and 8 characters long." data-bs-original-title="" title=""></i>
                     </div>
                   </div>*/}
-                </div> 
+                </div>
                 {/* <!-- Remember me --> */}
                 {/* <div className="mb-3 d-sm-flex justify-content-between">
                   <div>
