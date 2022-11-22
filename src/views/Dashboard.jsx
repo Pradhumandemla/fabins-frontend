@@ -3,19 +3,19 @@ import Sidebar from "./components/Sidebar";
 import ShareFeed from "./components/ShareFeed";
 import Timeline from "./components/Timeline";
 // import Stories from "./components/Stories";
-// import { useSelector } from "react-redux";
-// import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 
 export default function Dashboard() {
-  // const { token } = useSelector((state) => state.auth)
+  const { token } = useSelector((state) => state.auth)
+  const navigate = useNavigate();
 
-  // const navigate = useNavigate();
   useEffect(()=>{
-    // if (token === false ){
-    //   return navigate("/login");
-    // }
+    if (token === false ){
+      return navigate("/login");
+    }
   })
   return (
     <>

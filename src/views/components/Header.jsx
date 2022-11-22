@@ -1,5 +1,5 @@
 import React from "react";
-import Navlinks from "../components/Navlinks";
+// import Navlinks from "../components/Navlinks";
 import Navright from "../components/Navright";
 import Search from "../components/Search";
 

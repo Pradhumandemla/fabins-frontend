@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 export default function App() {
   useEffect(() => {
-    const head = document.head.innerHTML
+    // const head = document.head.innerHTML
 
     // console.log(head);
   })
