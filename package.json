@@ -24,6 +24,7 @@
   "scripts": {
     "start": "react-scripts start --env-file= /.env.production",
     "dev": "react-scripts start --env-file= /.env.development",
+    "git": "git push && git push heroku master",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
