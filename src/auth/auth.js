@@ -1,5 +1,4 @@
 // import axios from "axios";
-// import * as redux from "../redux/Auth/authSlice";
 
 export const login = async (dispatch, newUser) => {
     try {

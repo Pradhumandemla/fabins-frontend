@@ -3,12 +3,13 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import * as redux from "../redux/Auth/authSlice";                   
 // import { login } from "../auth/auth";
 
 export default function Login() {
   const [newUser, setNewUser] = useState({ email: "", password: "" });
   const state = useSelector((state) => state.auth);
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
 
@@ -16,6 +17,7 @@ export default function Login() {
 
   const loginHandler = async (e) => {
     e.preventDefault();
+    dispatch(redux.login("ashdajhs"))
     // login(dispatch, newUser)
   }
 
