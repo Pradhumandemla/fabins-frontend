@@ -1,13 +1,11 @@
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
-import RightSidebar from "./components/RightSidebar";
 import ShareFeed from "./components/ShareFeed";
 import Timeline from "./components/Timeline";
 // import Stories from "./components/Stories";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import { logout } from "../redux/Auth/authSlice";
 
 
 export default function Dashboard() {
