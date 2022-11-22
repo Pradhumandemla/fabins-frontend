@@ -22,7 +22,7 @@
     "typescript": "4.1.3"
   },
   "scripts": {
-    "start": "react-scripts --max_old_space_size=4096 --env-file= /.env.production start ",
+    "start": "react-scripts --max_old_space_size=4096 start ",
     "dev": "react-scripts start --env-file= /.env.development",
     "git": "git push && git push heroku master",
     "build": "react-scripts --max_old_space_size=4096 build",
