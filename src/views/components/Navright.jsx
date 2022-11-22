@@ -21,7 +21,7 @@ export default function Navright() {
           </a>
         </li>
         <li className="nav-item ms-2">
-          <a className="nav-link icon-md btn btn-light p-0" href="">
+          <a className="nav-link icon-md btn btn-light p-0" href="/">
             <i className="fa-solid fa-gear fs-6"> </i>
           </a>
         </li>
@@ -206,14 +206,14 @@ export default function Navright() {
               </div>
               <a
                 className="dropdown-item btn btn-primary-soft btn-sm my-2 text-center"
-                href="my-profile.html"
+                href="/"
               >
                 View profile
               </a>
             </li>
             {/* <!--  Links --> */}
             <li>
-              <a className="dropdown-item" href="settings.html">
+              <a className="dropdown-item" href="/">
                 <i className="bi bi-gear fa-fw me-2"></i>Settings &amp; Privacy
               </a>
             </li>
@@ -226,7 +226,7 @@ export default function Navright() {
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href="docs/index.html" target="_blank">
+              <a className="dropdown-item" href="/">
                 <i className="fa-fw bi bi-card-text me-2"></i>Documentation
               </a>
             </li>

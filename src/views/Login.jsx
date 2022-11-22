@@ -15,13 +15,13 @@ export default function Login() {
 
   const loginHandler = async (e) => {
     e.preventDefault();
-    login(dispatch, newUser)
+    // login(dispatch, newUser)
   }
 
   useEffect(()=>{
-    if (state.token) {
-      navigate("/")
-    }
+    // if (state.token) {
+    //   navigate("/")
+    // }
   })
 
   return (

@@ -13,9 +13,9 @@ export default function Dashboard() {
 
   const navigate = useNavigate();
   useEffect(()=>{
-    if (token === false ){
-      return navigate("/login");
-    }
+    // if (token === false ){
+    //   return navigate("/login");
+    // }
   })
   return (
     <>

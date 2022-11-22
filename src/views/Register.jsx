@@ -27,13 +27,13 @@ export default function Register() {
 
   const registerHandler = async (e) => {
     e.preventDefault();
-    register(dispatch, newUser);
+    // register(dispatch, newUser);
   }
 
   useEffect(()=>{
-    if (state.token) {
-      navigate("/")
-    }
+    // if (state.token) {
+    //   navigate("/")
+    // }
   })
   return (
     <>
