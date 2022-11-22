@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { login } from "../auth/auth";
+// import { useDispatch, useSelector } from "react-redux";
+// import { useNavigate } from "react-router-dom";
+// import { login } from "../auth/auth";
 
 export default function Login() {
   const [newUser, setNewUser] = useState({ email: "", password: "" });
-  const state = useSelector((state) => state.auth);
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
+  // const state = useSelector((state) => state.auth);
+  // const dispatch = useDispatch();
+  // const navigate = useNavigate();
 
 
   const handleChange = e => setNewUser({ ...newUser, [e.target.name]: (e.target.value + "").trim() });
