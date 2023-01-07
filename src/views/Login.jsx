@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";              
+import { Link, useNavigate } from "react-router-dom";
 import { login } from "../auth/auth";
 
 export default function Login() {
@@ -36,7 +36,10 @@ export default function Login() {
             <div className="card card-body text-center p-4 p-sm-5">
               {/* <!-- Title --> */}
               <h1 className="mb-2">Login</h1>
-              <p className="mb-0">Don't have an account?<a href="/register"> Click here to Register</a></p>
+              <p className="mb-0">Don't have an account?
+                <Link to="/register">Click here to Register</Link>
+                {/* <a href="/register"> Click here to Register</a> */}
+              </p>
               {/* <!-- Form START --> */}
               <form className="mt-sm-4">
                 {/* <!-- Email --> */}
