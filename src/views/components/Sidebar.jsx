@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Sidebar() {
   return (
     <>
@@ -54,18 +55,18 @@ export default function Sidebar() {
                   <div className="text-center">
                     {/* <!--  Avatar --> */}
                     <div className="avatar avatar-lg mt-n5 mb-3">
-                      <a href="/">
+                      <Link href="/">
                         <img
                           className="avatar-img rounded border border-white border-3"
                           src="assets/images/avatar/07.jpg"
                           alt=""
                         />
-                      </a>
+                      </Link>
                     </div>
                     {/* <!--  Info --> */}
                     <h5 className="mb-0">
 
-                      <a href="/">Sam Lanson </a>
+                      <Link href="/">Sam Lanson </Link>
                     </h5>
                     <small>Web Developer at Fabins</small>
                     <p className="mt-3">
@@ -104,7 +105,7 @@ export default function Sidebar() {
                   {/* <!--  Side Nav START --> */}
                   <ul className="nav nav-link-secondary flex-column fw-bold gap-2">
                     <li className="nav-item">
-                      <a className="nav-link" href="my-profile.html">
+                      <Link className="nav-link" href="my-profile.html">
 
                         <img
                           className="me-2 h-20px fa-fw"
@@ -112,10 +113,10 @@ export default function Sidebar() {
                           alt=""
                         />
                         <span>Feed </span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="nav-link"
                         href="my-profile-connections.html"
                       >
@@ -126,10 +127,10 @@ export default function Sidebar() {
                           alt=""
                         />
                         <span>Connections </span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="blog.html">
+                      <Link className="nav-link" href="blog.html">
 
                         <img
                           className="me-2 h-20px fa-fw"
@@ -137,10 +138,10 @@ export default function Sidebar() {
                           alt=""
                         />
                         <span>Latest News </span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="events.html">
+                      <Link className="nav-link" href="events.html">
 
                         <img
                           className="me-2 h-20px fa-fw"
@@ -148,10 +149,10 @@ export default function Sidebar() {
                           alt=""
                         />
                         <span>Events </span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="groups.html">
+                      <Link className="nav-link" href="groups.html">
 
                         <img
                           className="me-2 h-20px fa-fw"
@@ -159,10 +160,10 @@ export default function Sidebar() {
                           alt=""
                         />
                         <span>Groups </span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="notifications.html">
+                      <Link className="nav-link" href="notifications.html">
 
                         <img
                           className="me-2 h-20px fa-fw"
@@ -170,10 +171,10 @@ export default function Sidebar() {
                           alt=""
                         />
                         <span>Notifications </span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="settings.html">
+                      <Link className="nav-link" href="settings.html">
 
                         <img
                           className="me-2 h-20px fa-fw"
@@ -181,7 +182,7 @@ export default function Sidebar() {
                           alt=""
                         />
                         <span>Settings </span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                   {/* <!--  Side Nav END --> */}
@@ -189,9 +190,9 @@ export default function Sidebar() {
                 {/* <!--  Card body END --> */}
                 {/* <!--  Card footer --> */}
                 <div className="card-footer text-center py-2">
-                  <a className="btn btn-link btn-sm" href="my-profile.html">
+                  <Link className="btn btn-link btn-sm" href="my-profile.html">
                     View Profile
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* <!--  Card END --> */}
@@ -199,49 +200,49 @@ export default function Sidebar() {
               {/* <!--  Helper link START --> */}
               <ul className="nav small mt-4 justify-content-center lh-1">
                 <li className="nav-item">
-                  <a className="nav-link" href="my-profile-about.html">
+                  <Link className="nav-link" href="my-profile-about.html">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="settings.html">
+                  <Link className="nav-link" href="settings.html">
                     Settings
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link"
                     href="/"
                   >
                     Support
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link"
                     href="/"
                   >
                     Docs
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="help.html">
+                  <Link className="nav-link" href="help.html">
                     Help
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="privacy-and-terms.html">
+                  <Link className="nav-link" href="privacy-and-terms.html">
                     Privacy &amp; terms
-                  </a>
+                  </Link>
                 </li>
               </ul>
               {/* <!--  Helper link END --> */}
               {/* <!--  Copyright --> */}
               <p className="small text-center mt-1">
                 ©2022
-                <a className="text-body" href="/" >
+                <Link className="text-body" href="/" >
                   Fabins
-                </a>
+                </Link>
               </p>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function SimplePost() {
     return (
         <>
@@ -9,26 +10,26 @@ export default function SimplePost() {
                         <div className="d-flex align-items-center">
                             {/* <!--  Avatar --> */}
                             <div className="avatar me-2">
-                                <a href="/">
+                                <Link href="/">
 
                                     <img
                                         className="avatar-img rounded-circle"
                                         src="assets/images/logo/13.svg"
                                         alt=""
                                     />
-                                </a>
+                                </Link>
                             </div>
                             {/* <!--  Title --> */}
                             <div>
                                 <h6 className="card-title mb-0">
 
-                                    <a href="/"> Apple Education </a>
+                                    <Link href="/"> Apple Education </Link>
                                 </h6>
                                 <p className="mb-0 small">9 November at 23:29</p>
                             </div>
                         </div>
                         {/* <!--  Card share action menu --> */}
-                        <a
+                        <Link
                             href="/"
                             className="text-secondary btn btn-secondary-soft-hover py-1 px-2"
                             id="cardShareAction5"
@@ -36,45 +37,45 @@ export default function SimplePost() {
                             aria-expanded="false"
                         >
                             <i className="fa-solid fa-ellipsis"></i>
-                        </a>
+                        </Link>
                         {/* <!--  Card share action dropdown menu --> */}
                         <ul
                             className="dropdown-menu dropdown-menu-end"
                             aria-labelledby="cardShareAction5"
                         >
                             <li>
-                                <a className="dropdown-item" href="/">
+                                <Link className="dropdown-item" href="/">
 
                                     <i className="bi bi-bookmark fa-fw pe-2"></i>Save post
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="/">
+                                <Link className="dropdown-item" href="/">
 
                                     <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori
                                     ferguson
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="/">
+                                <Link className="dropdown-item" href="/">
 
                                     <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="/">
+                                <Link className="dropdown-item" href="/">
 
                                     <i className="bi bi-slash-circle fa-fw pe-2"></i>Block
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <hr className="dropdown-divider" />
                             </li>
                             <li>
-                                <a className="dropdown-item" href="/">
+                                <Link className="dropdown-item" href="/">
 
                                     <i className="bi bi-flag fa-fw pe-2"></i>Report post
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -92,17 +93,17 @@ export default function SimplePost() {
                     {/* <!--  Feed react START --> */}
                     <ul className="nav nav-stack pb-2 small">
                         <li className="nav-item">
-                            <a className="nav-link active text-secondary" href="/">
+                            <Link className="nav-link active text-secondary" href="/">
 
                                 <i className="bi bi-heart-fill me-1 icon-xs bg-danger text-white rounded-circle"></i>
                                 Louis, Billy and 126 others
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item ms-sm-auto">
-                            <a className="nav-link" href="/">
+                            <Link className="nav-link" href="/">
 
                                 <i className="bi bi-chat-fill pe-1"></i>Comments (12)
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     {/* <!--  Feed react END --> */}
@@ -113,14 +114,14 @@ export default function SimplePost() {
                     {/* <!--  Feed react START --> */}
                     <ul className="nav nav-fill nav-stack small">
                         <li className="nav-item">
-                            <a className="nav-link mb-0 active" href="/">
+                            <Link className="nav-link mb-0 active" href="/">
 
                                 <i className="bi bi-heart pe-1"></i>Liked (56)
-                            </a>
+                            </Link>
                         </li>
                         {/* <!--  Card share action dropdown START --> */}
                         <li className="nav-item dropdown">
-                            <a
+                            <Link
                                 href="/"
                                 className="nav-link mb-0"
                                 id="cardShareAction6"
@@ -129,56 +130,56 @@ export default function SimplePost() {
                             >
                                 <i className="bi bi-reply-fill flip-horizontal ps-1"></i>Share
                                 (3)
-                            </a>
+                            </Link>
                             {/* <!--  Card share action dropdown menu --> */}
                             <ul
                                 className="dropdown-menu dropdown-menu-end"
                                 aria-labelledby="cardShareAction6"
                             >
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-envelope fa-fw pe-2"></i>Send via
                                         Direct Message
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-bookmark-check fa-fw pe-2"></i>
                                         Bookmark
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-link fa-fw pe-2"></i>Copy link to post
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-share fa-fw pe-2"></i>Share post via …
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to
                                         News Feed
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </li>
                         {/* <!--  Card share action dropdown END --> */}
                         <li className="nav-item">
-                            <a className="nav-link mb-0" href="/">
+                            <Link className="nav-link mb-0" href="/">
 
                                 <i className="bi bi-send-fill pe-1"></i>Send
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     {/* <!--  Feed react END --> */}

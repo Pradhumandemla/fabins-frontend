@@ -13,41 +13,41 @@ export default function News() {
             {/* <!--  News item --> */}
             <div className="mb-3">
               <h6 className="mb-0">
-                <a href="blog-details.html">
+                <Link href="blog-details.html">
                   Ten questions you should answer truthfully
-                </a>
+                </Link>
               </h6>
               <small>2hr</small>
             </div>
             {/* <!--  News item --> */}
             <div className="mb-3">
               <h6 className="mb-0">
-                <a href="blog-details.html">
+                <Link href="blog-details.html">
                   Five unbelievable facts about money
-                </a>
+                </Link>
               </h6>
               <small>3hr</small>
             </div>
             {/* <!--  News item --> */}
             <div className="mb-3">
               <h6 className="mb-0">
-                <a href="blog-details.html">
+                <Link href="blog-details.html">
                   Best Pinterest Boards for learning about business
-                </a>
+                </Link>
               </h6>
               <small>4hr</small>
             </div>
             {/* <!--  News item --> */}
             <div className="mb-3">
               <h6 className="mb-0">
-                <a href="blog-details.html">
+                <Link href="blog-details.html">
                   Skills that you can learn from business
-                </a>
+                </Link>
               </h6>
               <small>6hr</small>
             </div>
             {/* <!--  Load more comments --> */}
-            <a
+            <Link
               href="/"
               role="button"
               className="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center"
@@ -60,7 +60,7 @@ export default function News() {
                 <span className="spinner-dot"></span>
               </div>
               View all latest news
-            </a>
+            </Link>
           </div>
           {/* <!--  Card body END --> */}
         </div>

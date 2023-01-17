@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../../redux/Auth/authSlice";
@@ -16,17 +17,17 @@ export default function Navright() {
       {/* <!--  Nav right START --> */}
       <ul className="nav flex-nowrap align-items-center ms-sm-3 list-unstyled">
         <li className="nav-item ms-2">
-          <a className="nav-link icon-md btn btn-light p-0" href="/">
+          <Link className="nav-link icon-md btn btn-light p-0" href="/">
             <i className="fa-solid fa-comments fs-6"> </i>
-          </a>
+          </Link>
         </li>
         <li className="nav-item ms-2">
-          <a className="nav-link icon-md btn btn-light p-0" href="/">
+          <Link className="nav-link icon-md btn btn-light p-0" href="/">
             <i className="fa-solid fa-gear fs-6"> </i>
-          </a>
+          </Link>
         </li>
         <li className="nav-item dropdown ms-2">
-          <a
+          <Link
             className="nav-link icon-md btn btn-light p-0"
             href="/"
             id="notifDropdown"
@@ -37,7 +38,7 @@ export default function Navright() {
           >
             <span className="badge-notif animation-blink"></span>
             <i className="fa-solid fa-bell fs-6"> </i>
-          </a>
+          </Link>
           <div
             className="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0"
             aria-labelledby="notifDropdown"
@@ -50,9 +51,9 @@ export default function Navright() {
                     4 new
                   </span>
                 </h6>
-                <a className="small" href="/">
+                <Link className="small" href="/">
                   Clear all
-                </a>
+                </Link>
               </div>
               <div className="card-body p-0">
                 <ul className="list-group list-group-flush list-unstyled p-2">
@@ -109,7 +110,7 @@ export default function Navright() {
                   </li>
                   {/* <!--  Notif item --> */}
                   <li>
-                    <a
+                    <Link
                       href="/"
                       className="list-group-item list-group-item-action rounded d-flex border-0 mb-1 p-3"
                     >
@@ -128,11 +129,11 @@ export default function Navright() {
                           <p className="small ms-3">1hr</p>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                   {/* <!--  Notif item --> */}
                   <li>
-                    <a
+                    <Link
                       href="/"
                       className="list-group-item list-group-item-action rounded d-flex border-0 p-3 mb-1"
                     >
@@ -151,14 +152,14 @@ export default function Navright() {
                         </p>
                         <p className="small ms-3">4hr</p>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div className="card-footer text-center">
-                <a href="/" className="btn btn-sm btn-primary-soft">
+                <Link href="/" className="btn btn-sm btn-primary-soft">
                   See all incoming activity
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -166,7 +167,7 @@ export default function Navright() {
         {/* <!--  Notification dropdown END --> */}
 
         <li className="nav-item ms-2 dropdown">
-          <a
+          <Link
             className="nav-link btn icon-md p-0"
             href="/"
             id="profileDropdown"
@@ -181,7 +182,7 @@ export default function Navright() {
               src="assets/images/avatar/07.jpg"
               alt=""
             />
-          </a>
+          </Link>
           <ul
             className="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3"
             aria-labelledby="profileDropdown"
@@ -198,37 +199,37 @@ export default function Navright() {
                   />
                 </div>
                 <div>
-                  <a className="h6 stretched-link" href="/">
+                  <Link className="h6 stretched-link" href="/">
                     Lori Ferguson
-                  </a>
+                  </Link>
                   <p className="small m-0">Web Developer</p>
                 </div>
               </div>
-              <a
+              <Link
                 className="dropdown-item btn btn-primary-soft btn-sm my-2 text-center"
                 href="/"
               >
                 View profile
-              </a>
+              </Link>
             </li>
             {/* <!--  Links --> */}
             <li>
-              <a className="dropdown-item" href="/">
+              <Link className="dropdown-item" href="/">
                 <i className="bi bi-gear fa-fw me-2"></i>Settings &amp; Privacy
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="dropdown-item"
                 href="/"
               >
                 <i className="fa-fw bi bi-life-preserver me-2"></i>Support
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="dropdown-item" href="/">
+              <Link className="dropdown-item" href="/">
                 <i className="fa-fw bi bi-card-text me-2"></i>Documentation
-              </a>
+              </Link>
             </li>
             <li className="dropdown-divider"></li>
             <li>

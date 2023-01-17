@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import Navlinks from "../components/Navlinks";
 import Navright from "../components/Navright";
 import Search from "../components/Search";
@@ -11,13 +12,13 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           {/* <!--  Logo START --> */}
-          <a className="navbar-brand" href="index.html">
+          <Link className="navbar-brand" href="index.html">
             <img
               className="light-mode-item navbar-brand-item"
               src="assets/images/logo.svg"
               alt="logo"
             />
-          </a>
+          </Link>
           {/* <!--  Logo END --> */}
 
           {/* <!--  Responsive navbar toggler --> */}

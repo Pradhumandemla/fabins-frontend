@@ -38,7 +38,6 @@ export default function Login() {
               <h1 className="mb-2">Login</h1>
               <p className="mb-0">Don't have an account?
                 <Link to="/register">Click here to Register</Link>
-                {/* <a href="/register"> Click here to Register</a> */}
               </p>
               {/* <!-- Form START --> */}
               <form className="mt-sm-4">
@@ -71,13 +70,13 @@ export default function Login() {
                     <input type="checkbox" className="form-check-input" id="rememberCheck" />
                     <label className="form-check-label" htmlFor="rememberCheck">Remember me?</label>
                   </div>
-                  <a href="forgot-password.html">Forgot password?</a>
+                  <Link to="/forgot-password.html">Forgot password?</Link>
                 </div> */}
                 {/* <!-- Button --> */}
                 <div className="d-grid"><button type="submit" className="btn btn-lg btn-primary" id="register"
                   onClick={(e) => loginHandler(e)} >Login</button></div>
                 {/* <!-- Copyright --> */}
-                {/* <p className="mb-0 mt-3">©2022 <a target="_blank" href="https://www.Fabins.com/">Fabins.</a> All rights reserved</p> */}
+                {/* <p className="mb-0 mt-3">©2022 <Link target="_blank" to="https://www.Fabins.com/">Fabins.</Link> All rights reserved</p> */}
               </form>
               {/* <!-- Form END --> */}
             </div>

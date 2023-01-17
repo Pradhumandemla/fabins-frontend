@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function FriendSuggestion() {
     return (
         <>
@@ -49,17 +50,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-story avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/10.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Larry Lawson </a>
+                                                        <Link href="/"> Larry Lawson </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         33 mutual connections
@@ -85,17 +86,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/11.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Louis Crawford </a>
+                                                        <Link href="/"> Louis Crawford </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         45 mutual connections
@@ -121,17 +122,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/12.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Dennis Barrett </a>
+                                                        <Link href="/"> Dennis Barrett </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         21 mutual connections
@@ -157,17 +158,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/09.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Amanda Reed </a>
+                                                        <Link href="/"> Amanda Reed </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         50 mutual connections
@@ -193,17 +194,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-story avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/10.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Larry Lawson </a>
+                                                        <Link href="/"> Larry Lawson </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         33 mutual connections
@@ -229,17 +230,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/11.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Louis Crawford </a>
+                                                        <Link href="/"> Louis Crawford </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         45 mutual connections
@@ -265,17 +266,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/12.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Dennis Barrett </a>
+                                                        <Link href="/"> Dennis Barrett </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         21 mutual connections
@@ -303,17 +304,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/09.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Amanda Reed </a>
+                                                        <Link href="/"> Amanda Reed </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         50 mutual connections
@@ -340,17 +341,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-story avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/10.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Larry Lawson </a>
+                                                        <Link href="/"> Larry Lawson </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         33 mutual connections
@@ -377,17 +378,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/11.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Louis Crawford </a>
+                                                        <Link href="/"> Louis Crawford </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         45 mutual connections
@@ -414,17 +415,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/12.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Dennis Barrett </a>
+                                                        <Link href="/"> Dennis Barrett </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         21 mutual connections
@@ -446,17 +447,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/09.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Amanda Reed </a>
+                                                        <Link href="/"> Amanda Reed </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         50 mutual connections
@@ -478,17 +479,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-story avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/10.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Larry Lawson </a>
+                                                        <Link href="/"> Larry Lawson </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         33 mutual connections
@@ -510,17 +511,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/11.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Louis Crawford </a>
+                                                        <Link href="/"> Louis Crawford </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         45 mutual connections
@@ -542,17 +543,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/12.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Dennis Barrett </a>
+                                                        <Link href="/"> Dennis Barrett </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         21 mutual connections
@@ -578,17 +579,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/09.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Amanda Reed </a>
+                                                        <Link href="/"> Amanda Reed </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         50 mutual connections
@@ -614,17 +615,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-story avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/10.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Larry Lawson </a>
+                                                        <Link href="/"> Larry Lawson </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         33 mutual connections
@@ -650,17 +651,17 @@ export default function FriendSuggestion() {
                                                 {/* <!--  Card body --> */}
                                                 <div className="card-body p-2 pb-0">
                                                     <div className="avatar avatar-xl">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img
                                                                 className="avatar-img rounded-circle"
                                                                 src="assets/images/avatar/11.jpg"
                                                                 alt=""
                                                             />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <h6 className="card-title mb-1 mt-3">
 
-                                                        <a href="/"> Louis Crawford </a>
+                                                        <Link href="/"> Louis Crawford </Link>
                                                     </h6>
                                                     <p className="mb-0 small lh-sm">
                                                         45 mutual connections

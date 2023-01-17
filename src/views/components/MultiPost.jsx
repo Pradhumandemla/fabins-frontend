@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function PostMultiPic() {
     return (
         <>
@@ -9,20 +10,20 @@ export default function PostMultiPic() {
                         <div className="d-flex align-items-center">
                             {/* <!--  Avatar --> */}
                             <div className="avatar me-2">
-                                <a href="/">
+                                <Link href="/">
 
                                     <img
                                         className="avatar-img rounded-circle"
                                         src="assets/images/avatar/04.jpg"
                                         alt=""
                                     />
-                                </a>
+                                </Link>
                             </div>
                             {/* <!--  Info --> */}
                             <div>
                                 <h6 className="card-title mb-0">
 
-                                    <a href="/"> Judy Nguyen </a>
+                                    <Link href="/"> Judy Nguyen </Link>
                                 </h6>
                                 <div className="nav nav-divider">
                                     <p className="nav-item mb-0 small">
@@ -43,7 +44,7 @@ export default function PostMultiPic() {
                         </div>
                         {/* <!--  Card share action START --> */}
                         <div className="dropdown">
-                            <a
+                            <Link
                                 href="/"
                                 className="text-secondary btn btn-secondary-soft-hover py-1 px-2"
                                 id="cardShareAction3"
@@ -51,45 +52,45 @@ export default function PostMultiPic() {
                                 aria-expanded="false"
                             >
                                 <i className="fa-solid fa-ellipsis"></i>
-                            </a>
+                            </Link>
                             {/* <!--  Card share action dropdown menu --> */}
                             <ul
                                 className="dropdown-menu dropdown-menu-end"
                                 aria-labelledby="cardShareAction3"
                             >
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-bookmark fa-fw pe-2"></i>Save post
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori
                                         ferguson
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-slash-circle fa-fw pe-2"></i>Block
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-flag fa-fw pe-2"></i>Report post
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -101,18 +102,18 @@ export default function PostMultiPic() {
                 <div className="card-body">
                     <p>
                         I'm so privileged to be involved in the
-                        <a href="/">@bootstrap </a>hiring process! Interviewing with
+                        <Link href="/">@bootstrap </Link>hiring process! Interviewing with
                         their team was fun and I hope this can be a valuable resource
-                        for folks! <a href="/"> #inclusivebusiness</a>
-                        <a href="/"> #internship</a> <a href="/"> #hiring</a>
-                        <a href="/"> #apply </a>
+                        for folks! <Link href="/"> #inclusivebusiness</Link>
+                        <Link href="/"> #internship</Link> <Link href="/"> #hiring</Link>
+                        <Link href="/"> #apply </Link>
                     </p>
                     {/* <!--  Card feed grid START --> */}
                     <div className="d-flex justify-content-between">
                         <div className="row g-3">
                             <div className="col-6">
                                 {/* <!--  Grid img --> */}
-                                <a
+                                <Link
                                     className="h-100"
                                     href="assets/images/post/1by1/03.jpg"
                                     data-glightbox=""
@@ -123,11 +124,11 @@ export default function PostMultiPic() {
                                         src="assets/images/post/1by1/03.jpg"
                                         alt=""
                                     />
-                                </a>
+                                </Link>
                             </div>
                             <div className="col-6">
                                 {/* <!--  Grid img --> */}
-                                <a
+                                <Link
                                     href="assets/images/post/3by2/01.jpg"
                                     data-glightbox=""
                                     data-gallery="image-popup"
@@ -137,16 +138,16 @@ export default function PostMultiPic() {
                                         src="assets/images/post/3by2/01.jpg"
                                         alt=""
                                     />
-                                </a>
+                                </Link>
                                 {/* <!--  Grid img --> */}
                                 <div className="position-relative bg-dark mt-3 rounded">
                                     <div className="hover-actions-item position-absolute top-50 start-50 translate-middle z-index-9">
-                                        <a className="btn btn-link text-white" href="/">
+                                        <Link className="btn btn-link text-white" href="/">
 
                                             View all
-                                        </a>
+                                        </Link>
                                     </div>
-                                    <a
+                                    <Link
                                         href="assets/images/post/3by2/02.jpg"
                                         data-glightbox=""
                                         data-gallery="image-popup"
@@ -156,7 +157,7 @@ export default function PostMultiPic() {
                                             src="assets/images/post/3by2/02.jpg"
                                             alt=""
                                         />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -166,17 +167,17 @@ export default function PostMultiPic() {
                     {/* <!--  Feed react START --> */}
                     <ul className="nav nav-stack py-3 small">
                         <li className="nav-item">
-                            <a className="nav-link active text-secondary" href="/">
+                            <Link className="nav-link active text-secondary" href="/">
 
                                 <i className="bi bi-heart-fill me-1 icon-xs bg-danger text-white rounded-circle"></i>
                                 Louis, Billy and 126 others
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item ms-sm-auto">
-                            <a className="nav-link" href="/">
+                            <Link className="nav-link" href="/">
 
                                 <i className="bi bi-chat-fill pe-1"></i>Comments (12)
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     {/* <!--  Feed react END --> */}
@@ -184,14 +185,14 @@ export default function PostMultiPic() {
                     {/* <!--  Feed react START --> */}
                     <ul className="nav nav-pills nav-pills-light nav-fill nav-stack small border-top border-bottom py-1 mb-3">
                         <li className="nav-item">
-                            <a className="nav-link mb-0 active" href="/">
+                            <Link className="nav-link mb-0 active" href="/">
 
                                 <i className="bi bi-heart pe-1"></i>Liked (56)
-                            </a>
+                            </Link>
                         </li>
                         {/* <!--  Card share action menu START --> */}
                         <li className="nav-item dropdown">
-                            <a
+                            <Link
                                 href="/"
                                 className="nav-link mb-0"
                                 id="cardShareAction4"
@@ -200,56 +201,56 @@ export default function PostMultiPic() {
                             >
                                 <i className="bi bi-reply-fill flip-horizontal ps-1"></i>Share
                                 (3)
-                            </a>
+                            </Link>
                             {/* <!--  Card share action dropdown menu --> */}
                             <ul
                                 className="dropdown-menu dropdown-menu-end"
                                 aria-labelledby="cardShareAction4"
                             >
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-envelope fa-fw pe-2"></i>Send via
                                         Direct Message
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-bookmark-check fa-fw pe-2"></i>
                                         Bookmark
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-link fa-fw pe-2"></i>Copy link to post
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-share fa-fw pe-2"></i>Share post via …
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" href="/">
 
                                         <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to
                                         News Feed
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </li>
                         {/* <!--  Card share action menu END --> */}
                         <li className="nav-item">
-                            <a className="nav-link mb-0" href="/">
+                            <Link className="nav-link mb-0" href="/">
 
                                 <i className="bi bi-send-fill pe-1"></i>Send
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     {/* <!--  Feed react START --> */}
@@ -261,14 +262,14 @@ export default function PostMultiPic() {
                             <div className="d-flex">
                                 {/* <!--  Avatar --> */}
                                 <div className="avatar avatar-xs">
-                                    <a href="/">
+                                    <Link href="/">
 
                                         <img
                                             className="avatar-img rounded-circle"
                                             src="assets/images/avatar/05.jpg"
                                             alt=""
                                         />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="ms-2">
                                     {/* <!--  Comment by --> */}
@@ -276,7 +277,7 @@ export default function PostMultiPic() {
                                         <div className="d-flex justify-content-between">
                                             <h6 className="mb-1">
 
-                                                <a href="/"> Frances Guerrero </a>
+                                                <Link href="/"> Frances Guerrero </Link>
                                             </h6>
                                             <small className="ms-2">5hr</small>
                                         </div>
@@ -288,22 +289,22 @@ export default function PostMultiPic() {
                                     {/* <!--  Comment rect --> */}
                                     <ul className="nav nav-divider py-2 small">
                                         <li className="nav-item">
-                                            <a className="nav-link" href="/">
+                                            <Link className="nav-link" href="/">
 
                                                 Like (3)
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="/">
+                                            <Link className="nav-link" href="/">
 
                                                 Reply
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="/">
+                                            <Link className="nav-link" href="/">
 
                                                 View 5 replies
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -315,13 +316,13 @@ export default function PostMultiPic() {
                                     <div className="d-flex">
                                         {/* <!--  Avatar --> */}
                                         <div className="avatar avatar-xs">
-                                            <a href="/">
+                                            <Link href="/">
                                                 <img
                                                     className="avatar-img rounded-circle"
                                                     src="assets/images/avatar/06.jpg"
                                                     alt=""
                                                 />
-                                            </a>
+                                            </Link>
                                         </div>
                                         {/* <!--  Comment by --> */}
                                         <div className="ms-2">
@@ -329,7 +330,7 @@ export default function PostMultiPic() {
                                                 <div className="d-flex justify-content-between">
                                                     <h6 className="mb-1">
 
-                                                        <a href="/"> Lori Stevens </a>
+                                                        <Link href="/"> Lori Stevens </Link>
                                                     </h6>
                                                     <small className="ms-2">2hr</small>
                                                 </div>
@@ -342,16 +343,16 @@ export default function PostMultiPic() {
                                             {/* <!--  Comment rect --> */}
                                             <ul className="nav nav-divider py-2 small">
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="/">
+                                                    <Link className="nav-link" href="/">
 
                                                         Like (5)
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="/">
+                                                    <Link className="nav-link" href="/">
 
                                                         Reply
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -363,13 +364,13 @@ export default function PostMultiPic() {
                                     <div className="d-flex">
                                         {/* <!--  Avatar --> */}
                                         <div className="avatar avatar-xs">
-                                            <a href="/">
+                                            <Link href="/">
                                                 <img
                                                     className="avatar-img rounded-circle"
                                                     src="assets/images/avatar/07.jpg"
                                                     alt=""
                                                 />
-                                            </a>
+                                            </Link>
                                         </div>
                                         {/* <!--  Comment by --> */}
                                         <div className="ms-2">
@@ -377,7 +378,7 @@ export default function PostMultiPic() {
                                                 <div className="d-flex justify-content-between">
                                                     <h6 className="mb-1">
 
-                                                        <a href="/"> Billy Vasquez </a>
+                                                        <Link href="/"> Billy Vasquez </Link>
                                                     </h6>
                                                     <small className="ms-2">15min</small>
                                                 </div>
@@ -388,16 +389,16 @@ export default function PostMultiPic() {
                                             {/* <!--  Comment rect --> */}
                                             <ul className="nav nav-divider py-2 small">
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="/">
+                                                    <Link className="nav-link" href="/">
 
                                                         Like
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="/">
+                                                    <Link className="nav-link" href="/">
 
                                                         Reply
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -405,7 +406,7 @@ export default function PostMultiPic() {
                                 </li>
                             </ul>
                             {/* <!--  Load more replies --> */}
-                            <a
+                            <Link
                                 href="/"
                                 role="button"
                                 className="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center mb-3 ms-5"
@@ -418,7 +419,7 @@ export default function PostMultiPic() {
                                     <span className="spinner-dot"></span>
                                 </div>
                                 Load more replies
-                            </a>
+                            </Link>
                         </li>
                         {/* <!--  Comment item END --> */}
                         {/* <!--  Comment item START --> */}
@@ -426,13 +427,13 @@ export default function PostMultiPic() {
                             <div className="d-flex">
                                 {/* <!--  Avatar --> */}
                                 <div className="avatar avatar-xs">
-                                    <a href="/">
+                                    <Link href="/">
                                         <img
                                             className="avatar-img rounded-circle"
                                             src="assets/images/avatar/05.jpg"
                                             alt=""
                                         />
-                                    </a>
+                                    </Link>
                                 </div>
                                 {/* <!--  Comment by --> */}
                                 <div className="ms-2">
@@ -440,7 +441,7 @@ export default function PostMultiPic() {
                                         <div className="d-flex justify-content-center">
                                             <h6 className="mb-1">
 
-                                                <a href="/"> Frances Guerrero </a>
+                                                <Link href="/"> Frances Guerrero </Link>
                                             </h6>
                                             <small className="ms-2">4min</small>
                                         </div>
@@ -452,22 +453,22 @@ export default function PostMultiPic() {
                                     {/* <!--  Comment rect --> */}
                                     <ul className="nav nav-divider pt-2 small">
                                         <li className="nav-item">
-                                            <a className="nav-link" href="/">
+                                            <Link className="nav-link" href="/">
 
                                                 Like (1)
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="/">
+                                            <Link className="nav-link" href="/">
 
                                                 Reply
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="/">
+                                            <Link className="nav-link" href="/">
 
                                                 View 6 replies
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -481,7 +482,7 @@ export default function PostMultiPic() {
                 {/* <!--  Card footer START --> */}
                 <div className="card-footer border-0 pt-0">
                     {/* <!--  Load more comments --> */}
-                    <a
+                    <Link
                         href="/"
                         role="button"
                         className="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center"
@@ -494,7 +495,7 @@ export default function PostMultiPic() {
                             <span className="spinner-dot"></span>
                         </div>
                         Load more comments
-                    </a>
+                    </Link>
                 </div>
                 {/* <!--  Card footer END --> */}
             </div>

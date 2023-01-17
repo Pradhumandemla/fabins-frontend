@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function AdsPost() {
     return (
         <>
@@ -9,21 +10,21 @@ export default function AdsPost() {
                         <div className="d-flex align-items-center">
                             {/* <!--  Avatar --> */}
                             <div className="avatar me-2">
-                                <a href="/">
+                                <Link to="/">
 
                                     <img
                                         className="avatar-img rounded-circle"
                                         src="assets/images/logo/12.svg"
                                         alt=""
                                     />
-                                </a>
+                                </Link>
                             </div>
                             {/* <!--  Info --> */}
                             <div>
                                 <h6 className="card-title mb-0">
-                                    <a href="/"> Bootstrap: Front-end framework </a>
+                                    <Link to="/"> Bootstrap: Front-end framework </Link>
                                 </h6>
-                                <a href="/" className="mb-0 text-body">
+                                <Link to="/" className="mb-0 text-body">
                                     Sponsored
                                     <i
                                         className="fa-solid fa-circle-info ps-1"
@@ -34,58 +35,58 @@ export default function AdsPost() {
                                         data-bs-original-title=""
                                         title=""
                                     ></i>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         {/* <!--  Card share action START --> */}
                         <div className="dropdown">
-                            <a
-                                href="/"
+                            <Link
+                                to="/"
                                 className="text-secondary btn btn-secondary-soft-hover py-1 px-2"
                                 id="cardShareAction2"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
                                 <i className="fa-solid fa-ellipsis"></i>
-                            </a>
+                            </Link>
                             {/* <!--  Card share action dropdown menu --> */}
                             <ul
                                 className="dropdown-menu dropdown-menu-end"
                                 aria-labelledby="cardShareAction2"
                             >
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" to="/">
 
                                         <i className="bi bi-bookmark fa-fw pe-2"></i>Save post
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" to="/">
 
                                         <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori
                                         ferguson
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" to="/">
 
                                         <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" to="/">
 
                                         <i className="bi bi-slash-circle fa-fw pe-2"></i>Block
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" to="/">
 
                                         <i className="bi bi-flag fa-fw pe-2"></i>Report post
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -106,10 +107,10 @@ export default function AdsPost() {
                 {/* <!--  Card footer START --> */}
                 <div className="card-footer border-0 d-flex justify-content-between align-items-center">
                     <p className="mb-0">Currently v5.1.3 </p>
-                    <a className="btn btn-primary-soft btn-sm" href="/">
+                    <Link className="btn btn-primary-soft btn-sm" to="/">
 
                         Download now
-                    </a>
+                    </Link>
                 </div>
                 {/* <!--  Card footer END --> */}
             </div>

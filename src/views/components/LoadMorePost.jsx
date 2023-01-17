@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 export default function LoadMorePost() {
   return (
     <>
       {/* <!--  Load more button START --> */}
-      <a
+      <Link
         href="/"
         role="button"
         className="btn btn-loader btn-primary-soft"
@@ -15,7 +16,7 @@ export default function LoadMorePost() {
             <span className="visually-hidden">Loading...</span>
           </div>
         </div>
-      </a>
+      </Link>
       {/* <!--  Load more button END --> */}
     </>
   );

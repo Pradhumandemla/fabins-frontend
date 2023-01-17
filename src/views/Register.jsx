@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
-// import { useDispatch} from "react-redux";
-import { useNavigate } from "react-router-dom";
-// import { register } from "../auth/auth";
+import { useDispatch} from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { register } from "../auth/auth";
 
 export default function Register() {
   const [newUser, setNewUser] = useState({ email: "", name: "", password: "" });
   const state = useSelector((state) => state.auth);
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleChange = e => setNewUser({ ...newUser, [e.target.name]: (e.target.value + "").trim() });
@@ -28,7 +28,7 @@ export default function Register() {
 
   const registerHandler = async (e) => {
     e.preventDefault();
-    // register(dispatch, newUser);
+    register(dispatch, newUser);
   }
 
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function Register() {
                 <div className="text-center">
                   {/* <!-- Title --> */}
                   <h1 className="mb-2">Register</h1>
-                  <span className="d-block">Already have an account? <a href="/login"> Login here</a></span>
+                  <span className="d-block">Already have an account? <Link to="/login"> Login here</Link></span>
                 </div>
                 {/* <!-- Form START --> */}
                 <form className="mt-4">
@@ -73,15 +73,15 @@ export default function Register() {
                       </span>
                     </div>
                     {/* <!-- Pswmeter --> */}
-                    <div id="pswmeter" className="mt-2 password-strength-meter"><div className="password-strength-meter-score"></div></div>
+                    {/* <div id="pswmeter" className="mt-2 password-strength-meter"><div className="password-strength-meter-score"></div></div>
                     <div className="d-flex mt-1">
-                      <div id="pswmeter-message" className="rounded">Write your password...</div>
+                      <div id="pswmeter-message" className="rounded">Write your password...</div> */}
                       {/* <!-- Password message notification --> */}
-                      <div className="ms-auto">
+                      {/* <div className="ms-auto">
                         <i className="fa-solid fa-circle-info ps-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Include at least one uppercase, one lowercase, one special character, one number and 8 characters long." data-bs-original-title="" title=""></i>
                       </div>
-                    </div>
-                  </div>
+                    </div>*/}
+                  </div> 
                   {/* <!-- Confirm password --> */}
                   <div className="mb-3 input-group-lg">
                     <input className="form-control" type="password" placeholder="Confirm password" onChange={(e) => confirmPasswordHandler(e)} />
@@ -105,7 +105,7 @@ export default function Register() {
                     </button>
                   </div>
                   {/* <!-- Copyright --> */}
-                  <p className="mb-0 mt-3 text-center">©2022 <a target="_blank" href="/">Fabins.</a> All rights reserved</p>
+                  <p className="mb-0 mt-3 text-center">©2022 <Link target="_blank" to="/">Fabins.</Link> All rights reserved</p>
                 </form>
                 {/* <!-- Form END --> */}
               </div>
