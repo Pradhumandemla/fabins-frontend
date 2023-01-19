@@ -6,7 +6,7 @@ export default function ModalFeedEvent() {
       <div
         className="modal fade"
         id="modalCreateEvents"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="modalLabelCreateAlbum"
         aria-hidden="true"
       >
@@ -54,7 +54,7 @@ export default function ModalFeedEvent() {
                     type="text"
                     className="form-control flatpickr flatpickr-input"
                     placeholder="Select date"
-                    readonly="readonly"
+                    readOnly="readonly"
                   />
                 </div>
                 {/* <!-- Time --> */}
@@ -66,7 +66,7 @@ export default function ModalFeedEvent() {
                     data-enabletime="true"
                     data-nocalendar="true"
                     placeholder="Select time"
-                    readonly="readonly"
+                    readOnly="readonly"
                   />
                 </div>
                 {/* <!-- Duration --> */}

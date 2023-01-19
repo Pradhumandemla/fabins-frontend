@@ -44,7 +44,7 @@ export default function ModalFeedFeeling() {
                     className="form-control pe-4 fs-3 lh-1 border-0"
                     rows="4"
                     placeholder="Share your thoughts..."
-                    autofocus=""
+                    autoFocus=""
                   ></textarea>
                 </form>
               </div>
@@ -130,7 +130,6 @@ export default function ModalFeedFeeling() {
                   data-type="select-one"
                   tabIndex="0"
                   role="listbox"
-                  aria-haspopup="true"
                   aria-expanded="false"
                 >
                   <div className="choices__inner">
@@ -165,7 +164,7 @@ export default function ModalFeedFeeling() {
                       <div
                         id="choices--mav0-item-choice-1"
                         className="choices__item choices__item--choice choices__item--selectable is-highlighted"
-                        role="option"
+                        // role="option"
                         data-choice=""
                         data-id="1"
                         data-value="PV"
@@ -178,7 +177,7 @@ export default function ModalFeedFeeling() {
                       <div
                         id="choices--mav0-item-choice-2"
                         className="choices__item choices__item--choice choices__item--selectable"
-                        role="option"
+                        // role="option"
                         data-choice=""
                         data-id="2"
                         data-value="PV"
@@ -190,7 +189,7 @@ export default function ModalFeedFeeling() {
                       <div
                         id="choices--mav0-item-choice-3"
                         className="choices__item choices__item--choice choices__item--selectable"
-                        role="option"
+                        // role="option"
                         data-choice=""
                         data-id="3"
                         data-value="PV"
@@ -202,7 +201,7 @@ export default function ModalFeedFeeling() {
                       <div
                         id="choices--mav0-item-choice-4"
                         className="choices__item choices__item--choice is-selected choices__item--selectable"
-                        role="option"
+                        // role="option"
                         data-choice=""
                         data-id="4"
                         data-value="PB"

@@ -6,7 +6,7 @@ export default function ModalFeedVideo() {
       <div
         className="modal fade"
         id="feedActionVideo"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="feedActionVideoLabel"
         aria-hidden="true"
       >

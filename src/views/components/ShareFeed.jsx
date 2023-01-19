@@ -1,9 +1,29 @@
+import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+import { addPost } from "../../post/post";
 import ModalFeedEvent from "./ModalFeedEvent";
 import ModalFeedFeeling from "./ModalFeedFeeling";
 import ModalFeedPhoto from "./ModalFeedPhoto";
 import ModalFeedVideo from "./ModalFeedVideo";
 export default function ShareFeed() {
+  
+  const [description , setDescription] = useState("");
+  // const { user } = useSelector((state) => state.auth);
+  // const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const descriptionHandler = (e) =>{
+    setDescription(e.target.value);
+  }
+
+  const addPostHandler = (e) => {
+    e.preventDefault();
+    addPost(dispatch,{description});
+    // update time line 
+  }
+
   return (
     <>
       <ModalFeedEvent />
@@ -24,16 +44,19 @@ export default function ShareFeed() {
             </Link>
           </div>
           {/* <!--  Post input --> */}
-          <form className="w-100 d-flex">
+          <form className="w-100 d-flex" >
             <textarea
               className="form-control pe-4 border-0"
               rows="2"
               data-autoresize=""
               placeholder="Share your thoughts..."
+              onChange={descriptionHandler} 
+              value={description}
             ></textarea>
             <button
               type="button"
               className="btn btn-sm btn-primary-soft align-self-start mt-1"
+              onClick={addPostHandler}
             >
               Post
             </button>
