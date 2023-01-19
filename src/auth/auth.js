@@ -12,27 +12,26 @@ export const login = async (dispatch, newUser) => {
         let { token } = res.data;
         localStorage.setItem("token", token);
         dispatch(redux.login(token));
-        dispatch(redux.login("ashdajhs"));
     } catch (error) {
         console.log(error);
-        return
+        return;
     }
 }
 
 export const register = async (dispatch, newUser) => {
     try {
-        let res = await axios.post(process.env.REACT_APP_BACKEND + "/auth/register", { ...newUser })
+        let res = await axios.post(process.env.REACT_APP_BACKEND + "/auth/register", { ...newUser });
         if (res.status !== 200) {
             console.log("error " + res.status);
             localStorage.removeItem("token");
-            return res
+            return res;
         }
-        let { token } = res.data
-        localStorage.setItem("token", token)
-        dispatch(redux.register(token))
+        let { token } = res.data;
+        localStorage.setItem("token", token);
+        dispatch(redux.register(token));
     } catch (error) {
         console.log(error);
-        return
+        return;
     }
 }
 export const logout = () => {
@@ -42,13 +41,16 @@ export const logout = () => {
 
     }
 }
-export const getUser = async (token) =>{
+export const getUser = async (dispatch, token) =>{
     if (token) {
       const userid = (jwt_decode(token))._id;
       try {
         let user = await axios.get(process.env.REACT_APP_BACKEND + "/users/" + userid);
+        dispatch(redux.setUser(user.data));
         
-      } catch (error) { }
-    
+      } catch (error) { 
+          console.log(error);
+          return;
+        }
     }
   }

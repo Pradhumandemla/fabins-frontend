@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../../redux/Auth/authSlice";
 
 export default function Navright() {
+  const { user } = useSelector ((state) => state.auth);
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -200,7 +202,7 @@ export default function Navright() {
                 </div>
                 <div>
                   <Link className="h6 stretched-link" href="/">
-                    Lori Ferguson
+                    {user?.name}
                   </Link>
                   <p className="small m-0">Web Developer</p>
                 </div>

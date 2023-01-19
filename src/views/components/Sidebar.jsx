@@ -1,5 +1,8 @@
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+
 export default function Sidebar() {
+  const { user } = useSelector((state) => state.auth);
   return (
     <>
       {/* <!--  Sidebar START --> */}
@@ -66,7 +69,7 @@ export default function Sidebar() {
                     {/* <!--  Info --> */}
                     <h5 className="mb-0">
 
-                      <Link href="/">Sam Lanson </Link>
+                      <Link href="/">{user.name ? user.name : ""} </Link>
                     </h5>
                     <small>Web Developer at Fabins</small>
                     <p className="mt-3">
@@ -78,23 +81,23 @@ export default function Sidebar() {
                     <div className="hstack gap-2 gap-xl-3 justify-content-center">
                       {/* <!--  User stat item --> */}
                       <div>
-                        <h6 className="mb-0">256</h6>
+                        <h6 className="mb-0">{user.posts ? user.posts.length : "0"}</h6>
                         <small>Post</small>
                       </div>
                       {/* <!--  Divider --> */}
-                      <div className="vr"></div>
+                      {/* <div className="vr"></div> */}
                       {/* <!--  User stat item --> */}
-                      <div>
+                      {/* <div>
                         <h6 className="mb-0">2.5K</h6>
                         <small>Followers</small>
-                      </div>
+                      </div> */}
                       {/* <!--  Divider --> */}
-                      <div className="vr"></div>
+                      {/* <div className="vr"></div> */}
                       {/* <!--  User stat item --> */}
-                      <div>
+                      {/* <div>
                         <h6 className="mb-0">365</h6>
                         <small>Following</small>
-                      </div>
+                      </div> */}
                     </div>
                     {/* <!--  User stat END --> */}
                   </div>
