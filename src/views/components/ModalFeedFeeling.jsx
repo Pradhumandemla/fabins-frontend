@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 export default function ModalFeedFeeling() {
   return (
     <>
@@ -6,7 +6,7 @@ export default function ModalFeedFeeling() {
       <div
         className="modal fade"
         id="modalCreateFeed"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="modalLabelCreateFeed"
         aria-hidden="true"
       >
@@ -50,9 +50,9 @@ export default function ModalFeedFeeling() {
               </div>
               {/* <!-- Feed rect START --> */}
               <div className="hstack gap-2">
-                <a
+                <Link
                   className="icon-md bg-success bg-opacity-10 text-success rounded-circle"
-                  href="#"
+                  href="/"
                   data-bs-toggle="tooltip"
                   data-bs-placement="top"
                   title=""
@@ -60,10 +60,10 @@ export default function ModalFeedFeeling() {
                 >
                   {" "}
                   <i className="bi bi-image-fill"></i>{" "}
-                </a>
+                </Link>
                 <a
                   className="icon-md bg-info bg-opacity-10 text-info rounded-circle"
-                  href="#"
+                  href="/"
                   data-bs-toggle="tooltip"
                   data-bs-placement="top"
                   title=""
@@ -72,9 +72,9 @@ export default function ModalFeedFeeling() {
                   {" "}
                   <i className="bi bi-camera-reels-fill"></i>{" "}
                 </a>
-                <a
+                <Link
                   className="icon-md bg-danger bg-opacity-10 text-danger rounded-circle"
-                  href="#"
+                  href="/"
                   data-bs-toggle="tooltip"
                   data-bs-placement="top"
                   title=""
@@ -82,10 +82,10 @@ export default function ModalFeedFeeling() {
                 >
                   {" "}
                   <i className="bi bi-calendar2-event-fill"></i>{" "}
-                </a>
-                <a
+                </Link>
+                <Link
                   className="icon-md bg-warning bg-opacity-10 text-warning rounded-circle"
-                  href="#"
+                  href="/"
                   data-bs-toggle="tooltip"
                   data-bs-placement="top"
                   title=""
@@ -93,10 +93,10 @@ export default function ModalFeedFeeling() {
                 >
                   {" "}
                   <i className="bi bi-emoji-smile-fill"></i>{" "}
-                </a>
-                <a
+                </Link>
+                <Link
                   className="icon-md bg-light text-secondary rounded-circle"
-                  href="#"
+                  href="/"
                   data-bs-toggle="tooltip"
                   data-bs-placement="top"
                   title=""
@@ -104,10 +104,10 @@ export default function ModalFeedFeeling() {
                 >
                   {" "}
                   <i className="bi bi-geo-alt-fill"></i>{" "}
-                </a>
-                <a
+                </Link>
+                <Link
                   className="icon-md bg-primary bg-opacity-10 text-primary rounded-circle"
-                  href="#"
+                  href="/"
                   data-bs-toggle="tooltip"
                   data-bs-placement="top"
                   title=""
@@ -115,7 +115,7 @@ export default function ModalFeedFeeling() {
                 >
                   {" "}
                   <i className="bi bi-tag-fill"></i>{" "}
-                </a>
+                </Link>
               </div>
               {/* <!-- Feed rect END --> */}
             </div>
@@ -128,7 +128,7 @@ export default function ModalFeedFeeling() {
                 <div
                   className="choices"
                   data-type="select-one"
-                  tabindex="0"
+                  tabIndex="0"
                   role="listbox"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -139,7 +139,7 @@ export default function ModalFeedFeeling() {
                       data-position="top"
                       data-search-enabled="false"
                       hidden=""
-                      tabindex="-1"
+                      tabIndex="-1"
                       data-choice="active"
                     >
                       <option value="PB">Public</option>
