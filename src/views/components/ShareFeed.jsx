@@ -1,147 +1,90 @@
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
-import { addPost } from "../../post/post";
-import ModalFeedEvent from "./ModalFeedEvent";
-import ModalFeedFeeling from "./ModalFeedFeeling";
-import ModalFeedPhoto from "./ModalFeedPhoto";
-import ModalFeedVideo from "./ModalFeedVideo";
+import { UploadPost, addPost, getTimeline } from "../../post/post";
+import { useDropzone } from 'react-dropzone';
+
 export default function ShareFeed() {
   
-  const [description , setDescription] = useState("");
-  // const { user } = useSelector((state) => state.auth);
-  // const navigate = useNavigate();
+  const [desc , setDesc] = useState("");
+  const [files, setFiles] = useState([]);
+  const { timeline } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
+  const {getRootProps, getInputProps} = useDropzone({
+    accept: {
+      'image/*': []
+    },
+    onDrop: acceptedFiles => {
+      setFiles(acceptedFiles.map(file => Object.assign(file, {
+        preview: URL.createObjectURL(file)
+      })));
+    }
+  });
+  const thumbs = files.map(file => (
+    <div style={{display: 'inline-flex',borderRadius: 2,border: '1px solid #eaeaea',marginBottom: 8,marginRight: 8,width: 100,height: 100,padding: 4,boxSizing: 'border-box'}} key={file.name}>
+      <div style={{display: 'flex',minWidth: 0,overflow: 'hidden'}}>
+        <img
+          src={file.preview}
+          style={{display: 'block',width: 'auto',height: '100%'}}
+          // Revoke data uri after image is loaded
+          onLoad={() => { URL.revokeObjectURL(file.preview) }}
+        />
+      </div>
+    </div>
+  ));
   const descriptionHandler = (e) =>{
-    setDescription(e.target.value);
+    setDesc(e.target.value);
   }
 
-  const addPostHandler = (e) => {
+  const addPostHandler = async (e) => { 
     e.preventDefault();
-    addPost(dispatch,{description});
-    // update time line 
+    if (files.length > 0) {    
+      const formdata = new FormData();
+      files.forEach((file, i) => {
+        formdata.append('files',files[i]);
+      });
+      const res = await UploadPost(formdata);
+      let img = res.data;
+      addPost(dispatch,{desc ,img});
+    }
+    else {
+      addPost(dispatch,{desc});
+    }
+    setDesc('');
+    setFiles([]);
+    getTimeline(dispatch);
   }
+
+  useEffect(() => {
+    // Make sure to revoke the data uris to avoid memory leaks, will run on unmount
+    return () => files.forEach(file => URL.revokeObjectURL(file.preview));
+  }, []);
 
   return (
     <>
-      <ModalFeedEvent />
-      <ModalFeedFeeling />
-      <ModalFeedPhoto />
-      <ModalFeedVideo />
-      {/* <!--  Share feed START --> */}
       <div className="card card-body">
         <div className="d-flex mb-3">
-          {/* <!--  Avatar --> */}
-          <div className="avatar avatar-xs me-2">
-            <Link href="/">
-              <img
-                className="avatar-img rounded-circle"
-                src="assets/images/avatar/03.jpg"
-                alt=""
-              />
-            </Link>
-          </div>
-          {/* <!--  Post input --> */}
-          <form className="w-100 d-flex" >
-            <textarea
-              className="form-control pe-4 border-0"
-              rows="2"
-              data-autoresize=""
-              placeholder="Share your thoughts..."
-              onChange={descriptionHandler} 
-              value={description}
-            ></textarea>
-            <button
-              type="button"
-              className="btn btn-sm btn-primary-soft align-self-start mt-1"
-              onClick={addPostHandler}
-            >
-              Post
-            </button>
+          <form className="w-100" >
+            <div className="d-flex">
+              <Link className="avatar avatar-xs me-2" href="/">
+                <img className="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="" />
+              </Link>
+              <textarea className="form-control pe-4 border-0" rows="2" data-autoresize="" placeholder="Share your thoughts..." onChange={descriptionHandler} value={desc} />
+              <div className="text-end" >
+                <button type="submit" className="btn btn-sm btn-primary-soft mt-1" onClick={addPostHandler}>Post</button>
+              </div>
+            </div>
+            <div {...getRootProps({className: 'dropzone'})}>
+              <input {...getInputProps()} />
+              <p>Drag 'n' drop some files here, or click to select files</p>
+            </div>
+            <aside style={{display: 'flex',flexDirection: 'row',flexWrap: 'wrap',marginTop: 16}}>
+              {thumbs}
+            </aside>
           </form>
         </div>
-        {/* <!--  Share feed toolbar START --> */}
-        <ul className="nav nav-pills nav-stack small fw-normal">
-          <li className="nav-item">
-            <button
-              type="button"
-              className="nav-link bg-light py-1 px-2 mb-0"
-              data-bs-toggle="modal"
-              data-bs-target="#feedActionPhoto"
-            >
-              <i className="fa-solid fa-image text-success pe-2"></i>Photo
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              className="nav-link bg-light py-1 px-2 mb-0"
-              data-bs-toggle="modal"
-              data-bs-target="#feedActionVideo"
-            >
-              <i className="fa-solid fa-video text-info pe-2"></i>Video
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              className="nav-link bg-light py-1 px-2 mb-0"
-              data-bs-toggle="modal"
-              data-bs-target="#modalCreateEvents"
-            >
-              <i className="fa-solid fa-calendar text-danger pe-2"></i>
-              Event
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              className="nav-link bg-light py-1 px-2 mb-0"
-              data-bs-toggle="modal"
-              data-bs-target="#modalCreateFeed"
-            >
-              <i className="fa-solid fa-face-smile text-warning pe-2"></i>
-              Feeling /Activity
-            </button>
-          </li>
-          <li className="nav-item dropdown ms-lg-auto">
-            <button
-              className="nav-link bg-light py-1 px-2 mb-0"
-              id="feedActionShare"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i className="fa-solid fa-ellipsis"></i>
-            </button>
-            {/* <!--  Dropdown menu --> */}
-            <ul
-              className="dropdown-menu dropdown-menu-end"
-              aria-labelledby="feedActionShare"
-            >
-              <li>
-                <Link className="dropdown-item" href="/">
-                  <i className="bi bi-envelope fa-fw pe-2"></i>Create a poll
-                </Link>
-              </li>
-              <li>
-                <Link className="dropdown-item" href="/">
-                  <i className="bi bi-bookmark-check fa-fw pe-2"></i>Ask a
-                  question
-                </Link>
-              </li>
-              <li>
-                <hr className="dropdown-divider" />
-              </li>
-              <li>
-                <Link className="dropdown-item" href="/">
-                  <i className="bi bi-pencil-square fa-fw pe-2"></i>Help
-                </Link>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        {/* <!--  Share feed toolbar END --> */}
       </div>
-      {/* <!--  Share feed END --> */}
     </>
   );
 }

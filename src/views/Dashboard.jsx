@@ -30,7 +30,7 @@ export default function Dashboard() {
       <main>
         {/* <!--  Container START --> */}
         <div className="container">
-          <div className="row g-4">
+          <div className="row">
             <Sidebar />
             {/* <!--  Main content START --> */}
             <div className="col-md-8 col-lg-6 ">
@@ -42,7 +42,7 @@ export default function Dashboard() {
               </div>
             </div>
             {/* <!--  Main content END --> */}
-            <RightSidebar />
+            {/* <RightSidebar /> */}
           </div>
           {/* <!--  Row END --> */}
         </div>

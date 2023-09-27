@@ -71,10 +71,9 @@ export default function Sidebar() {
 
                       <Link href="/">{user.name ? user.name : ""} </Link>
                     </h5>
-                    <small>Web Developer at Fabins</small>
+                    <small>{user.desig ? user.desig : ""}</small>
                     <p className="mt-3">
-                      I'd love to change the world, but they won’t give me
-                      the source code.
+                      {user.desc ? user.desc : ""}
                     </p>
 
                     {/* <!--  User stat START --> */}
@@ -103,10 +102,10 @@ export default function Sidebar() {
                   </div>
 
                   {/* <!--  Divider --> */}
-                  <hr />
+                  {/* <hr /> */}
 
                   {/* <!--  Side Nav START --> */}
-                  <ul className="nav nav-link-secondary flex-column fw-bold gap-2">
+                  {/* <ul className="nav nav-link-secondary flex-column fw-bold gap-2">
                     <li className="nav-item">
                       <Link className="nav-link" href="my-profile.html">
 
@@ -187,7 +186,7 @@ export default function Sidebar() {
                         <span>Settings </span>
                       </Link>
                     </li>
-                  </ul>
+                  </ul> */}
                   {/* <!--  Side Nav END --> */}
                 </div>
                 {/* <!--  Card body END --> */}
@@ -201,7 +200,7 @@ export default function Sidebar() {
               {/* <!--  Card END --> */}
 
               {/* <!--  Helper link START --> */}
-              <ul className="nav small mt-4 justify-content-center lh-1">
+              {/* <ul className="nav small mt-4 justify-content-center lh-1">
                 <li className="nav-item">
                   <Link className="nav-link" href="my-profile-about.html">
                     About
@@ -238,15 +237,15 @@ export default function Sidebar() {
                     Privacy &amp; terms
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
               {/* <!--  Helper link END --> */}
               {/* <!--  Copyright --> */}
-              <p className="small text-center mt-1">
+              {/* <p className="small text-center mt-1">
                 ©2022
                 <Link className="text-body" href="/" >
                   Fabins
                 </Link>
-              </p>
+              </p> */}
             </div>
           </div>
         </nav>

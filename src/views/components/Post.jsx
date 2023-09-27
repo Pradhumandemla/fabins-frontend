@@ -1,6 +1,46 @@
 import { Link } from "react-router-dom";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 // import Comment from "./Comment";
-export default function Post() {
+export default function Post(props) {
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
+
+  function convertInHrsMin(date) {
+    const a = new Date(date);
+    const b = new Date();
+    const milliseconds = b.getTime() - a.getTime();
+    let seconds = milliseconds/1000;
+    let days = Math.floor(seconds / (3600*24));
+    seconds  -= days*3600*24;
+    let hrs   = Math.floor(seconds / 3600);
+    seconds  -= hrs*3600;
+    let mnts = Math.floor(seconds / 60);
+    seconds  -= mnts*60;
+    let str;
+    if (seconds > 0 && seconds < 60) {
+      str = seconds+" Seconds";
+    }
+    if (mnts > 0 && mnts < 60) {
+      str = mnts+" Minutes";
+    }
+    if (hrs > 0 && hrs < 24) {
+      str = hrs+" Hrs";
+    }
+    if (days > 0 && days < 365) {
+      str = days+" Days";
+    }
+    return str;
+  }
+
   return (
     <>
       {/* <!--  Card feed item START --> */}
@@ -23,9 +63,9 @@ export default function Post() {
               <div>
                 <div className="nav nav-divider">
                   <h6 className="nav-item card-title mb-0">
-                    <Link href="/"> Lori Ferguson </Link>
+                    <Link href="/"> {props.uid.name}</Link>
                   </h6>
-                  <span className="nav-item small"> 2hr</span>
+                  <span className="nav-item small"> {convertInHrsMin(props.updatedAt)}</span>
                 </div>
                 <p className="mb-0 small">Web Developer at Fabins</p>
               </div>
@@ -84,17 +124,19 @@ export default function Post() {
         {/* <!--  Card body START --> */}
         <div className="card-body">
           <p>
-            I'm thrilled to share that I've completed a graduate certificate
-            course in project management with the president's honor roll.
+            {props.desc}
           </p>
-          {/* <!--  Card img --> */}
-          <img
-            className="card-img"
-            src="assets/images/post/3by2/01.jpg"
-            alt="Post"
-          />
+          {/* <!-- Card feed grid START --> */}
+          <Slider {...settings}>
+            {props.img.map((image, index) => (
+              <div className="text-center" key={index}>
+                <img src={process.env.REACT_APP_BACKEND+'/'+image.path} alt="" />
+              </div>
+            ))}
+          </Slider>
+          {/* <!-- Card feed grid END --> */}
           {/* <!--  Feed react START --> */}
-          <ul className="nav nav-stack py-3 small">
+          <ul className="nav nav-stack py-3 mt-2 small">
             <li className="nav-item">
               <Link className="nav-link active" href="/">
                 <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)

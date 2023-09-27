@@ -18247,3 +18247,7 @@ span.flatpickr-weekday,
   width: 100%;
   background: #0cbc87;
 }
+
+.border-dotted{
+  border-style: dotted;
+ }
